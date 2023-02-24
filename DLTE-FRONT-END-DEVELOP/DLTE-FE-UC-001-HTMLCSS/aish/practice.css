@@ -1,0 +1,21 @@
+.subscribeit{
+    background-color: blue;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 2px 4px purple;
+    margin-right: 100px;
+    padding: 70px;
+}
+.subscribeit:hover{
+    background-color: aquamarine;
+}
+.subscribeit:active{
+    background-color: blueviolet;
+}
+.joinit{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}

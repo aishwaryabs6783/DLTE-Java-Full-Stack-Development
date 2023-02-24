@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+
+</head>
+<script>
+$(document).ready(function() {
+    $('#transactionForm').submit(function(event) {
+      // get form data
+      var formData = $('#transactionForm').serialize();
+     
+      // perform validation
+      if ($('#transactionId').val() == '') {
+        alert(' please fill this field');
+      } else if ($('#transactionDate').val() == '') {
+        alert(' enter the transaction date.');
+      } else if ($('#transactionType').val() == '') {
+        alert(' please select an item from the list.');
+      } else if ($('#transactionMode').val() == '') {
+        alert(' select the transaction mode.');
+      } else if ($('#transactionAmount').val() == '') {
+        alert('  please fill this field.');
+      } else if ($('#transactionReceiver').val() == '') {
+        alert(' please fill this field ');
+      }
+ 
+ 
+  </script>
+<body>"
+    <h2 class="d-flex justify-content-center bg-secondary">transaction details </h2>
+    <div class="container bg-info  ">
+        <div class="d-flex justify-content-center">
+        <form id="transactionForm">
+            <label>Transaction ID:</label>
+            <input type="text" id="transactionId" name="transactionId" placeholder="ID" >
+            <br>
+            <label >Transaction Date:</label>
+            <input type="date" id="transactionDate" name="transactionDate" placeholder="date">
+            <br>
+            <label>Transaction Type:</label>
+            <select id="transactionType" name="transactionType" placeholder="type" >
+            <option value=""></option>
+            <option >Credit</option>
+            <option >Debit</option>
+            </select>
+            <br>
+            <label >Transaction Mode:</label>
+            <select id="transactionMode" name="transactionMode">
+            <option value=""></option>
+            <option >Cash</option>
+            <option >Credit Card</option>
+            <option >Debit Card</option>
+            <option >Net Banking</option>
+            <option >UPI</option>
+            </select>
+            <br>
+            <label >Transaction Amount:</label>
+            <input type="number" id="transactionAmount" name="transactionAmount" >
+            <br>
+            <label >Transaction Receiver:</label>
+            <input type="text" id="transactionReceiver" name="transactionReceiver">
+            <br>
+            <button type="submit">Submit</button>
+      </form>
+      </div>
+    </div>
+</body>
+</html>

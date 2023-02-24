@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Document</title>
+    <style>
+        img{
+            
+            width: 400px;
+            height:200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="LF-Logo.png">
+    <h1 class="title">KYC form </h1>
+    <h2 class="title" > Customer information</h2>
+    <div class="container">
+        
+        <from class="child">
+            <img src="swedish-central-bank.jpg">
+            
+            <div class="grp">
+                <labeL>Customer name</labeL>
+                    <input type ="text" name="fullname" placeholder="name as per Aadhaar">
+            </div>
+            <div class="grp">
+                <labeL>Customer PAN</labeL>
+                    <input type ="text" name="PAN" placeholder="PAN NUMBER">
+
+            </div>
+            <div class="grp">
+                <labeL>Customer Aadhaar </labeL>
+                    <input type ="text" name="Aadhaar" placeholder="Aadhaar number">
+
+            </div>
+            
+            <div class="grp">
+                    <labeL>Customer contact</labeL>
+                    <input type ="text" name="number" placeholder="contact number">
+            </div>
+            <p>    
+            <div class="grp">
+                    <labeL>Customer address</labeL>
+                    <textarea> </textarea>
+                    
+            </div>
+            </p>   
+            
+            <div class="grp">
+                <label>gender:</label>
+                <label>male
+                <input type="radio" name="gender" placeholder="male">
+                </label>
+                <label>female
+                <input type="radio" name="female" placeholder="female">
+                </label>
+                <label>others
+                <input type="radio" name="others" placeholder="others">
+                </label>
+            
+
+            </div>
+            <p>
+            <div class="grp">
+                <label>Account type : </label>
+                <select name="type">
+                    <option>Savings</option>
+                    <option>current</option>
+                </select>
+            </div>
+            </p>
+            <div class="btn-grp">
+
+                <input class="btn" type="submit" value="submit">
+                <input class="btn" type="reset" value="clear">
+                
+                
+
+            </div>
+        </from>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="679dab42-7ba8-4fdd-a019-85fec9df0eab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2M9N7LxgtUXnLI5HXK5gr1QU7Ci" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DLTE-JAVA" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="679dab42-7ba8-4fdd-a019-85fec9df0eab" name="Default Changelist" comment="" />
+      <created>1677175669283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677175669283</updated>
+      <workItem from="1677175672907" duration="3444000" />
+      <workItem from="1677198699362" duration="3085000" />
+      <workItem from="1677202308168" duration="1160000" />
+      <workItem from="1677203517677" duration="608000" />
+      <workItem from="1677263410050" duration="39000" />
+    </task>
+    <task id="LOCAL-00001" summary="Interface,">
+      <created>1677201790600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677201790600</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Interface,hello">
+      <created>1677202434444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677202434444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="deleted a file">
+      <created>1677203551947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677203551947</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created a file">
+      <created>1677203791362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677203791362</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Interface," />
+    <MESSAGE value="Interface,hello" />
+    <MESSAGE value="deleted a file" />
+    <MESSAGE value="created a file" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1677263436893">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.672@0.0.1280.672" timestamp="1677263436893" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1677263446753">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1677263446753" />
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1677185129769">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.672@0.0.1280.672" timestamp="1677185129769" />
+    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1677185129769">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.672@0.0.1280.672" timestamp="1677185129769" />
+    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1677185129769">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.672@0.0.1280.672" timestamp="1677185129769" />
+    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1677185129769">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.672@0.0.1280.672" timestamp="1677185129769" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1677203562788">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.672@0.0.1280.672" timestamp="1677203562788" />
+    <state x="349" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1677263412127">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="349" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.672@0.0.1280.672" timestamp="1677263412127" />
+    <state x="452" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1677201803291">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="452" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.672@0.0.1280.672" timestamp="1677201803291" />
+    <state x="447" y="141" key="git4idea.merge.GitPullDialog" timestamp="1677202443537">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="447" y="141" key="git4idea.merge.GitPullDialog/0.0.1280.672@0.0.1280.672" timestamp="1677202443537" />
+  </component>
+</project>
