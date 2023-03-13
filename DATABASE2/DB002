@@ -1,0 +1,11 @@
+--DCL
+select * from card;
+create user aishwarya identified by tieto;--insufficient privilege
+connect system/aishu6783; --invalid sql[my username password]
+
+create table transactions(tra_id int not null,tra_date date not null,tra_amt int not null,tra_to varchar(225) ,tra_from varchar(225));
+desc transactions;
+alter table transactions add constraints id primary key(tra_id);
+alter table transactions modify(tra_from int);
+alter table transactions add foreign key (tra_from) references card(card_num);
+alter table card add primary key(card_number);
