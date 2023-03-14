@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="260929f2-5406-47c3-85ac-ed3e5fbf6e01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/DLTE-JAVA-JAVA-006.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/src/main/java/concurrency/ImpletingExecutors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/src/main/java/concurrency/abc1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-006/src/main/java/example/Access.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/DLTE-JAVA-JAVA-012.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/src/main/java/org/example/TranscationF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-JAVA-JAVA-012/transacc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-TEC-TASK/.idea/DLTE-TEC-TASK.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-TECH-WEEK2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-TECH-WEEK2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DLTE-TECH-WEEK2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DLTE-TECH-WEEK2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CC/Creditcard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/CC/Creditcard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/DLTE-SERVLET-001.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/target/DLTE-SERVLET-001.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/target/DLTE-SERVLET-001/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/target/DLTE-SERVLET-001/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JAKARTA EE/target/DLTE-SERVLET-001/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JATAKA EE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-INHERITANCE/src/main/java/example/hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-INHERITANCE/src/main/java/example/hello.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mfkt3uS0nrN4ywrGwJ22m6c7ya" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Creditcard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CC.Creditcard" />
+      <module name="DLTE-TECH-WEEK2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Creditcard" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="260929f2-5406-47c3-85ac-ed3e5fbf6e01" name="Default Changelist" comment="" />
+      <created>1678166235996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678166235996</updated>
+      <workItem from="1678166239507" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1678166829849">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1678166829849" />
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1678166839700">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.672@0.0.1280.672" timestamp="1678166839700" />
+    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1678166839700">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.672@0.0.1280.672" timestamp="1678166839700" />
+    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1678166839700">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.672@0.0.1280.672" timestamp="1678166839700" />
+    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1678166839700">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.672@0.0.1280.672" timestamp="1678166839700" />
+  </component>
+</project>
