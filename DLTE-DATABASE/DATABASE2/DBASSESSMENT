@@ -1,0 +1,11 @@
+create table payee(cust_id int not null,cust_name varchar(225),payee_name varchar(225),payee_acct_num int not null,payee_ifsc int not null);
+describe payee;
+alter table payee add primary key(cust_id,payee_name);
+describe payee;
+insert into payee values(123,'vanu','aish',567,200);
+select * from payee;
+insert into payee values(567,'vanu','aish',890,234576);
+
+insert into payee values(5698,'vanu','aish',58867,2067);
+
+insert into payee values(1235678,'vanu','aish',56007,200000);

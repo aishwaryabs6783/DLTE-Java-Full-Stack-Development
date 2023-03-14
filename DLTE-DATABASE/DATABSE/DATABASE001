@@ -1,0 +1,65 @@
+create table kyc(acct_no int not null,acct_name varchar(225)  not null,contact int not null);
+describe kyc;--to see
+insert into kyc values(100,'aish',2345);
+select * from kyc;--to view
+--to add
+alter table kyc add pan varchar(225);--after inserting values u cannot use not null so don't use
+select from kyc;
+insert into kyc(pan) values('134f6');
+update kyc set pan='12343gff' where acct_no=100;
+
+
+task1
+create table card(card_number int not null, card_holder varchar(225) not null, card_pin int not null, card_expiry date not null);
+describe card;
+alter table card add limit int not null;
+create sequence seq start with 100 increment by 1;
+insert into card values(seq.nextval,'aish',6785,'05-12-2078',199);
+select * from card;
+insert into card values(seq.nextval,'vanu',6786,'05-12-2079',200);
+insert into card values(seq.nextval,'dad',6787,'05-12-2079',201);
+insert into card values(seq.nextval,'mom',6788,'05-12-2079',202);
+insert into card values(seq.nextval,'archu',6789,'05-12-2079',203);
+insert into card values(seq.nextval,'chethu',6786,'05-12-2079',204);
+insert into card values(seq.nextval,'aafil',6786,'05-12-2079',205);
+insert into card values(seq.nextval,'dhar',6786,'05-12-2079',206);
+insert into card values(seq.nextval,'miz',6786,'05-12-2079',207);
+insert into card values(seq.nextval,'kavs',6786,'05-12-2079',208);
+select * from card;
+--update card expiry
+update card set card_expiry= '09-12-2080' where card_number=105;
+--view
+create view information as select card_number,card_holder from card;
+select * from information;
+create view style as select card_expiry,card_pin from card;
+select * from style;
+--casting
+create type bike as table of varchar(255);
+
+select cast(collect(card_holder) as bike) from information;
+
+---
+connect system/password;
+drop user username;
+alter session set current schema=aishwarya;
+
+
+--normalization
+--1st NF=no column shud have multiple value
+--create table dlte,insert values
+create table 1NF as select * from dlte;
+--update only one upi,gmail
+--insert the record
+--update manually the  user ids
+--alter table for primary key(user id)
+
+
+--2NF EVERY RECORD HAS TO BE MATCHED WITH ATLEAST ONE COMPOSITE KEY(COMBINATION OF 1 OR MORE COLUMNS)
+--DUPLICATE ANY VALUE
+create table 2NF as select (ANY 3 COLUMNS)  from 1NF;
+create table 2NF as select ( 3 COLUMNS)  from 1NF;
+create table 2NF as select ( REMAINING)  from 1NF;
+--alter table for primary key(user id)
+--alter table for FOREIGN key(user id) references 2NF(USER ID);
+
+--4NF DECOMPOSING USERS 
