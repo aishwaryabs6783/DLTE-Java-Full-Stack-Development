@@ -1,0 +1,12 @@
+
+create table StudentDetails1(reg_num int not null,age  int not null,stu_name varchar(225), email varchar(225));
+describe StudentDetails1;
+alter table StudentDetails1 add primary key(reg_num);
+describe StudentDetails;
+alter table StudentDetails1 add adress varchar(225);
+create table address(door_num int not null,town varchar(225),city varchar(225),pincode int not null);
+alter table address add add_id int not null;
+alter table address add primary key(add_id);
+create sequence sequenc start with 100 increment by 1;
+insert into address values(,seq.nextval,'aish',6785,'05-12-2078',199);
+

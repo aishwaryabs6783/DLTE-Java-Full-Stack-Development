@@ -12,13 +12,13 @@ import java.sql.*;
 
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.RPC)
-public class KycCRUDL {
+public class CardCRUDL {
     private Driver driver;
     private Connection connection;
     private String query;
     private PreparedStatement preparedStatement;
     private ResultSet resultSet;
-    public KycCRUDL(){
+    public CardCRUDL(){
         try {
             driver=new OracleDriver();
             DriverManager.registerDriver(driver);
@@ -68,7 +68,7 @@ public class KycCRUDL {
                 card.setCard_pin(resultSet.getInt("card_pin"));
                 card.setCard_expiry(resultSet.getDate("card_expiry"));
                 card.setLimit(resultSet.getInt("limit"));
-                listOfCARD.getcards().add(card);
+                listOfCARD.getCards().add(card);
             }
             //connection.close();
             return listOfCARD;
