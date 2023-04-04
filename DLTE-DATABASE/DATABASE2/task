@@ -1,0 +1,35 @@
+create table customer (cust_id int not null,password varchar(225),name varchar(225),balance int not null);
+create sequence num start with 100 increment by 1;
+create table payeee(id int not null,payee_name varchar(225),acct_num int not null);
+alter table payeee add cust_id int ;
+alter table  customer add primary key(cust_id);
+alter table payeee add foreign key(cust_id) references customer(cust_id);
+insert into customer values(num.nextval,'123a','aish',25000);
+insert into payeee values(456,'vanu',123456,);
+
+
+
+
+
+create table loan(loannum int not null,borrow_name varchar(255),type varchar(255),amt int not null,issuedate date not null,pin int not null);
+create table loan(loannum int not null,borrow_name varchar(255),loan_type varchar(255),amt int not null,issuedate date not null);
+create table taskcustomer(customerid int not null primary key,customer_name varchar(255),email varchar(255),pan varchar(255),contact int not null,pin int not null);
+create sequence num start with 100 increment by 1;
+alter table loan add primary key(loannum);
+create sequence seq start with 100 increment by 1;
+create table mapper1(custo_id int not null,loan_num int not null);
+alter table mapper1 add foreign key(loan_num)references loan(loannum);
+alter table mapper1 add foreign key(custo_id)references taskcustomer(customerid);
+
+
+select * from loan,mapper1 where mapper1.custo_id=120 and loan.loannum=mapper1.loan_num;
+
+
+create table studenttable(reg_num int not null,name varchar(255),sl_no int not null,email varchar(255),age int not null);
+create sequence numb start with 10 increment by 1;
+create table addresstable(add_id int not null primary key,stu_sl_num int not null,door_num int not null,town varchar(255),city varchar(255),pincode int not null);
+alter table studenttable add constraint numb unique(sl_num);
+alter table addresstable add foreign key(stu_sl_num) references studenttable(sl_no);
+create sequence numbb start with 100 increment by 1;
+alter table addresstable drop primary key;
+alter table addresstable add constraint numbb primary key(add_id);
