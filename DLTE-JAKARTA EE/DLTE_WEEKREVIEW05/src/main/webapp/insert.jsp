@@ -23,6 +23,7 @@
             font-weight: 100;
         }
 
+
         .columnTitle{
             font-size: large ;
             font-family: "Arial Rounded MT Bold";
