@@ -3,7 +3,7 @@ package details;
 import java.io.Serializable;
 
 public class StudentDet implements Serializable {
-    private long reg_num;
+    private int reg_num;
     private int age;
     private String stu_name;
     private String email;
@@ -13,14 +13,22 @@ public class StudentDet implements Serializable {
     private String city;
     private String pincode;
 
-    public StudentDet(Integer reg_num, Integer age, String stu_name, String email, String adress, Integer door_num, String town, String city, Integer pincode) {
+    public StudentDet(int reg_num, int age, String stu_name, String email, int door_num, String town, String city, String pincode) {
+        this.reg_num=reg_num;
+        this.age=age;
+        this.stu_name=stu_name;
+        this.email=email;
+        this.door_num=door_num;
+        this.town=town;
+        this.city=city;
+        this.pincode=pincode;
     }
 
-    public long getReg_num() {
+    public int getReg_num() {
         return reg_num;
     }
 
-    public void setReg_num(long reg_num) {
+    public void setReg_num(int reg_num) {
         this.reg_num = reg_num;
     }
 
@@ -46,10 +54,6 @@ public class StudentDet implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getAdress() {
-        return adress;
     }
 
     public void setAdress(String adress) {
@@ -95,7 +99,6 @@ public class StudentDet implements Serializable {
                 ", age=" + age +
                 ", stu_name='" + stu_name + '\'' +
                 ", email='" + email + '\'' +
-                ", adress='" + adress + '\'' +
                 ", door_num=" + door_num +
                 ", town='" + town + '\'' +
                 ", city='" + city + '\'' +
