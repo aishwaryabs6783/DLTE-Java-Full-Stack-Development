@@ -63,3 +63,6 @@ create table 2NF as select ( REMAINING)  from 1NF;
 --alter table for FOREIGN key(user id) references 2NF(USER ID);
 
 --4NF DECOMPOSING USERS 
+
+
+DELETE FROM table_name WHERE condition;

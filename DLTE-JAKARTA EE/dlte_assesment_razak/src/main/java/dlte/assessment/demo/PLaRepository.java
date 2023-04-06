@@ -13,7 +13,7 @@ public interface PLaRepository extends CrudRepository<PersonalLoanApplication,In
 
     @Query(value = "select * from PersonalLoanApplication where cibil>700 and profession=('selfemployed','salaried') and income=(amt*3)",nativeQuery = true)
     //Optional<PersonalLoanApplication> findPersonalLoanApplicationByStatus(int cibil,String profession,int income);
-    Optional<PersonalLoanApplication> updateStatus();
+    Optional<PersonalLoanApplication> findPersonalApplicationByStatus(int cibil, String profession, int income);
 
     @Query(value="select * from PersonalLoanApplication where status=('rejected')",nativeQuery = true)
     List<String>findAllByStatus(String status);

@@ -2,11 +2,33 @@
 create table StudentDetails1(reg_num int not null,age  int not null,stu_name varchar(225), email varchar(225));
 describe StudentDetails1;
 alter table StudentDetails1 add primary key(reg_num);
-describe StudentDetails;
+describe StudentDetails1;
 alter table StudentDetails1 add adress varchar(225);
 create table address(door_num int not null,town varchar(225),city varchar(225),pincode int not null);
 alter table address add add_id int not null;
 alter table address add primary key(add_id);
 create sequence sequenc start with 100 increment by 1;
-insert into address values(,seq.nextval,'aish',6785,'05-12-2078',199);
+create sequence sequence1 start with 200 increment by 1;
+insert into address values(278,'magadi','ramanagar','562120',sequence1.nextval);
+ALTER TABLE address
+MODIFY  pincode varchar(225);
+drop table StudentDetails;
+insert into StudentDetails1 values(sequenc.nextval,21,'aish','aish@gmail.com','bangalore');
+select * from address;
+alter table StudentDetails1 modify (adress unique);
+alter table address add foreign key(add_id)references StudentDetails1(adress);
+ALTER TABLE address
+MODIFY  add_id varchar(225);
+truncate table address;
+insert into address values(278,'magadi','ramanagar','562120',sequence1.nextval);
+
+create table StudentDetails1(reg_num int not null primary key,age  int not null,stu_name varchar(225), email varchar(225),address_id int not null  );
+create table address(add_id int not null,door_num int not null,town varchar(225),city varchar(225),pincode int not null);
+alter table address add foreign key(add_id)references StudentDetails1(address_id);
+alter table StudentDetails1 modify (address_id unique);
+
+
+
+
+create sequence sequence_add start with 100 increment by 1;
 

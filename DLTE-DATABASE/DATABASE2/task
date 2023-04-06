@@ -33,3 +33,6 @@ alter table addresstable add foreign key(stu_sl_num) references studenttable(sl_
 create sequence numbb start with 100 increment by 1;
 alter table addresstable drop primary key;
 alter table addresstable add constraint numbb primary key(add_id);
+
+
+insert into PERSONAL_LOAN_APPLICATION values(100,12345678,150000,800,500000,'1234ert','selfemployed','12-03-2023',approved);
