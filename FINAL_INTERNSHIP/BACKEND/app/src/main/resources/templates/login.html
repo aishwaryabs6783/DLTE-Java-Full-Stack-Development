@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER LOGIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        body{
+            background: linear-gradient(45deg,rgb(0, 174, 255),black);
+        }
+        #fm{
+            background: linear-gradient(45deg,rgb(0, 94, 255),skyblue);
+            color:beige;
+        }
+
+    </style>
+    <script>
+        $(document).ready(()=> {
+
+            $("#btn").click(() => {
+                var username = $("input[name=Name]").val()
+                 //var username=$("input[name=Name]".val()
+                $.post('http://localhost:8082/aish/authenticate',{username:$("input[name=Name]").val(),password:$("input[name=Password]").val()},function(response){
+                    if(response == "Success"){
+                         sessionStorage.setItem("logged",username);
+                        window.location.href="http://localhost:8082/web/UI";
+                    }
+                    else{
+                        alert(response);
+                    }
+
+                });
+// alert("hello")
+            })
+        })
+    </script>
+</head>
+<body>
+
+<marquee class="text-light" direction="right">
+    <p>Welcome tpo ALPHA bank,happy login!!!!Bank never asks you to share passwords,Beware of fraud sms!!!!!!!!</p>
+</marquee>
+<div class=" d-flex justify-content-center mt-2">
+    <img src="/images/LOGO2.png" width="100px" height="100px">
+</div>
+<div class="container bg-white">
+    <div class="row mt-4">
+
+        <div class=" col-lg-6 ">
+
+            <h1>Customer Login</h1>
+            <div id="fm" >
+                <form>
+                    <div class="form group">
+                        <label>Customer USERNAME</label>
+                        <input type="text" id="user"placeholder="Name" name="Name" class="form-control"/>
+                    </div>
+                    <div class="form group">
+                        <label>Customer Password</label>
+                        <input type="password" id="password" placeholder="Password" name="Password" class="form-control"/>
+                    </div>
+                    <div class="d-flex mt-4 row justify-content-around">
+                        <button type="button" id="btn" class=" btn col-2 btn-success">Login</button>
+                        <button type="reset" class=" btn col-2 btn-primary">Reset</button>
+                    </div>
+                    <div >
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <img class="col-lg-6 mt-6" src="/images/bankimage.jpg" height="300px" width="300px">
+    </div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://soap.bank.service"
+            xmlns:tns="http://soap.bank.service"
+            elementFormDefault="qualified">
+
+    <!-- POJO -->
+    <xsd:complexType name="Payee">
+        <xsd:sequence>
+            <xsd:element name="payeeId" type="xsd:int" />
+            <xsd:element name="payeeName" type="xsd:string"/>
+            <xsd:element name="payeeAccountNumber" type="xsd:long" />
+            <xsd:element name="customerId" type="xsd:int" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--ServiceStatus-->
+    <xsd:complexType name="serviceStatus">
+        <xsd:sequence>
+            <xsd:element name="status" type="xsd:string" />
+            <xsd:element name="message" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:element name="listPayeeRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="username" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="listPayeeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="payee" type="tns:Payee" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+
+</xsd:schema>
