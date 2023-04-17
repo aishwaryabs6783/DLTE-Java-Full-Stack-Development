@@ -1,0 +1,273 @@
+create table bank(bank_id int not NULL primary key,bank_name varchar(255),bank address varchar(255)) on delete cascade;
+create sequence bank_seq start with 100 incrementby 1;
+alter table bank_project add constraint bank_seq primary key(bank_id);
+
+create table branch_project(branch_id int not null,)
+create table branch_project(branch_id int not null,branch_name varchar(255) not null,branch_loc varchar(255),branch_address varchar(255),branch_ifsc varchar(255))
+create table role(role_id int not null,role_name varchar(255),role_description varchar(255),role_status varchar(255),branch_id int not null)
+--create table loan_project(loan_id int not null,loan_type varchar(255)not null,loan_amt int not null,cust_id int not null,branch_id int not null)
+create table admin_loan_project(loan_id int not null,loan_type varchar(255)not null,loan_name varchar(255) not null,loan_desc varchar(255) not null,loan_roi int not null,loan_duration int not null);
+create table customer_project(cust_id int not null,cust_name varchar(255)not null,cust_address varchar(255) not null,cust_status varchar(255) not null,cust_contact int not null);
+create table profile_project(profile_id int not null,profile_pan varchar(255)not null,profile_aadhar int not null,profile_status varchar(255) not null,cust_id int not null);
+create table transaction_project(tra_id int not null,tra_type varchar(255)not null,tra_from int not null,tra_to int not null,tra_amt int not null,tra_status varchar(255) not null,tra_date date not null);
+
+
+create sequence branch_seq start with 100 incrementby 1;
+alter table branch_project add constraint branch_seq primary key(branch_id);
+
+
+
+create sequence role_seq start with 100 incrementby 1;
+alter table role add constraint role_seq primary key(role_id);
+alter table role add foreign key(branch_id) references branch_project(branch_id);
+
+create sequence cust_seq start with 100 incrementby 1;
+alter table customer_project add constraint cust_seq primary key(cust_id);
+alter table customer_project add foreign key(branch_id) references branch_project(branch_id);
+
+create sequence profile_seq start with 100 incrementby 1;
+alter table profile_project add constraint profile_seq primary key(profile_id);
+alter table profile_project add foreign key(cust_id) references customer_project(cust_id);
+
+create sequence tranc_seq start with 100 incrementby 1;
+alter table transaction_project add constraint tranc_seq primary key(tra_id);
+alter table transaction_project add foreign key(acc_id) references account_project(acc_id);
+
+
+create sequence tranc_seq start with 100 incrementby 1;
+alter table transaction_project add constraint tranc_seq primary key(tra_id);
+alter table transaction_project add foreign key(acc_id) references account_project(acc_id);
+
+
+create sequence payee_seq start with 100 incrementby 1;
+alter table payeee_project add constraint payee_seq primary key(payee_id);
+alter table payeee_project add foreign key(cust_id) references customer_project(cust_id);
+
+create sequence loan_seq start with 100 incrementby 1;
+alter table loan_project add constraint loan_seq primary key(loan_app_id);
+alter table loan_project add foreign key(cust_id) references customer_project(cust_id);
+
+
+alter table account_project add foreign key(branch_id) references branch_project(branchid);
+
+alter table bank_project add foreign key(branch_id) references branch_project(branch_id);
+
+
+
+
+--Table BANK--
+
+create table bank (bank_id int not null, bank_name varchar(255) not null, bank_address varchar(255) not null);
+
+create sequence bank_id_seq start with 100 increment by 1;
+
+alter table bank add constraint bank_id_seq primary key(bank_id);
+
+
+
+
+--Tbale BRANCH--
+
+create table branch(branch_id int not null, branch_name varchar(255) not null,branch_location varchar(255) not null, branch_address varchar(255) not null,branch_ifsc varchar(255) not null, bank_id int not null);
+
+create sequence branch_id_seq start with 100 increment by 1;
+
+alter table branch add constraint branch_id_seq primary key(branch_id);
+
+alter table branch add foreign key(bank_id) references bank(bank_id);
+
+
+
+
+
+
+--Table ROLE--
+
+create table role(role_id int not null, role_name varchar(255) not null,role_desc varchar(255) not null,role_status varchar(255) not null, branch_id int not null, username varchar(255) not null, password varchar(255) not null);
+
+create sequence role_id_seq start with 100 increment by 1;
+
+alter table role add constraint role_seq primary key(role_id);
+
+alter table role add foreign key(branch_id) references branch(branch_id);
+
+
+
+
+
+
+--Table ADMIN loans--
+
+create table loan_scheme(loan_scheme_id int not null primary key , loan_scheme_type varchar(255) not null,loan_scheme_name varchar(255) not null,loan_scheme_desc varchar(255) not null, loan_scheme_roi float not null);
+
+
+
+
+--Table CUSTOMER--
+
+create table customer(customer_id int not null,customer_name varchar(255) not null,customer_address varchar(255) not null, customer_status varchar(255) not null, customer_contact int not null, username varchar(255) not null, password varchar(255) not null);
+
+create sequence customer_id_seq start with 100 increment by 1;
+
+alter table customer add constraint customer_id_seq primary key(customer_id);
+
+
+
+
+
+
+
+--Table PROIFLES--
+
+create table profile(profile_id int not null,profile_pan varchar(255) not null,profile_aadhaar int not null, profile_status varchar(255) not null, customer_id int not null);
+
+alter table profile add constraint profile_id_seq primary key(profile_id);
+
+alter table profile add foreign key(customer_id) references customer(customer_id);
+
+
+
+
+
+
+--Table Account--
+
+create table account(account_id int not null,account_type varchar(255) not null,account_number int not null, account_avl_balance float not null,account_status varchar(255) not null, customer_id int not null,branch_id int not null);
+
+alter table account add constraint account_id_seq primary key(account_id);
+
+alter table account add foreign key(customer_id) references customer(customer_id);
+
+alter table account add foreign key(branch_id) references branch(branch_id);
+
+alter table account modify (account_number unique);
+
+create sequence payee_id_seq start with 100 increment by 1;
+insert into payee values(payee_id_seq.nextval,'aafil',123456678,100);
+insert into payee values(payee_id_seq.nextval,'sheel',98765432190,100);
+insert into payee values(payee_id_seq.nextval,'mayukha',45678930,101);
+insert into payee values(payee_id_seq.nextval,'harshi',98765400000,101);
+insert into payee values(payee_id_seq.nextval,'chan',000055555,102);
+insert into payee values(payee_id_seq.nextval,'archana',98765432190,102);
+insert into payee values(payee_id_seq.nextval,'surya',88888899999,103);
+insert into payee values(payee_id_seq.nextval,'poo',99999444555,102);
+
+
+
+
+--Table TRANSACTION--
+
+create table transaction(txn_id int not null,txn_type varchar(255) not null,txn_from int not null,txn_to int not null,txn_amount float not null, txn_status varchar(255) not null, trans_date DATE not null);
+
+alter table transaction add constraint txn_id_seq primary key(txn_id);
+
+alter table transaction add foreign key(txn_from) references account(account_id);
+
+alter table transaction add foreign key(txn_to) references account(account_id);
+
+
+
+
+
+
+
+--Table PAYEE--
+
+create table payee(payee_id int not null,payee_name varchar(255) not null,payee_account_number int not null,customer_id int not null);
+
+alter table payee add constraint payee_id_seq primary key(payee_id);
+
+alter table payee add foreign key(customer_id) references customer(customer_id);
+
+alter table payee add foreign key(payee_account_number) references account(account_number);
+
+
+
+
+
+
+
+--Table Loan-project--
+
+create table loan(loan_App_id int not null, loan_amount float not null, loan_emi float not null,loan_scheme_id int not null,customer_id int not null);
+
+alter table loan add constraint loan_App_id_seq primary key(loan_App_id);
+
+alter table  loan add foreign key(customer_id) references customer(customer_id);
+
+alter table  loan add foreign key(loan_scheme_id) references loan_scheme(loan_scheme_id);
+
+
+
+insert into bank values(BANK_ID_SEQ.nextval,'Alpha Bank','Channsandra,Uttarahalli main road,Bangalore');
+
+insert into branch values(BRANCH_ID_SEQ.nextval,'kengeri','9th foor,sampike building,6th cross,kengeri','keng0123456',100);
+insert into branch values(BRANCH_ID_SEQ.nextval,'poornapragnanagar','8th foor,chainagari building,6th cross,poornapragnanagar','poorn0123456',100);
+insert into branch values(BRANCH_ID_SEQ.nextval,'banashankari','4th floor ,mallige building,6th block,banashankari','alph0981234',100);
+
+
+insert into role values(ROLE_ID_SEQ.nextval,'admin','all privileges','active',101,'vanu','aishu6783');
+insert into role values(ROLE_ID_SEQ.nextval,'official','managing operations','active',101,'anu','aishu6783');
+insert into role values(ROLE_ID_SEQ.nextval,'official','managing operations','active',102,'archana','aishu6783');
+insert into role values(ROLE_ID_SEQ.nextval,'admin','all priviliges','active',102,'channa','aishu6783');
+insert into role values(ROLE_ID_SEQ.nextval,'admin','all priviliges','active',104,'chethu','aishu6783');
+insert into role values(ROLE_ID_SEQ.nextval,'official','managing operatons','active',104,'anna','aishu6783');
+
+insert into customer values(customer_id_seq,'apoorva','gandhinagar,bellary','active',123456789,'apoorva','123');
+insert into customer values(customer_id_seq.nextval,'surya','bangalore','active',1234567890,'sur','789');
+insert into customer values(customer_id_seq.nextval,'gourav','mangalore','active',987654321,'gou','789');
+insert into customer values(customer_id_seq.nextval,'pooja','mangalore','active',987654321,'poo','567');
+
+insert into account values(account_id_sequence.nextval,'savings',123456678,25000,'active',100,101);
+insert into account values(account_id_sequence.nextval,'current',98765432190,100000,'active',100,101);
+
+insert into account values(account_id_sequence.nextval,'savings',45678930,25000,'active',101,102);
+insert into account values(account_id_sequence.nextval,'current',98765400000,100000,'active',101,102);
+
+insert into account values(account_id_sequence.nextval,'savings',000055555,560045,'active',102,104);
+insert into account values(account_id_sequence.nextval,'current',98765432190,100000,'active',102,104);
+
+insert into account values(account_id_sequence.nextval,'savings',88888899999,25000,'active',103,104);
+insert into account values(account_id_sequence.nextval,'savings',99999444555,560045,'active',102,104);
+
+insert into profile values(profile_id_seq.nextval,'dkdpa1255h',123456789,'active',100);
+insert into profile values(profile_id_seq.nextval,'dkdpa1256h',123456780,'active',101);
+insert into profile values(profile_id_seq.nextval,'dkdpa1257h',123456781,'active',102);
+insert into profile values(profile_id_seq.nextval,'dkdpa1258h',123456782,'active',103);
+
+create sequence payee_id_seq start with 100 increment by 1;
+insert into payee values(payee_id_seq.nextval,'aafil',123456678,101);
+insert into payee values(payee_id_seq.nextval,'sheel',98765432190,101);
+insert into payee values(payee_id_seq.nextval,'mayukha',45678930,100);
+insert into payee values(payee_id_seq.nextval,'harshi',98765400000,100);
+insert into payee values(payee_id_seq.nextval,'chan',000055555,103);
+insert into payee values(payee_id_seq.nextval,'archana',98765432190,103);
+insert into payee values(payee_id_seq.nextval,'surya',88888899999,102);
+insert into payee values(payee_id_seq.nextval,'poo',99999444555,100);
+
+create sequence txn_id_seq start with 100 increment by 1;
+insert into transaction values(txn_id_seq.nextval,123456678,45678930,10936.4,'successful','12-mar-2023');
+insert into transaction values(txn_id_seq.nextval,98765432190,98765400000,15000.0,'failed','24-apr-2023');
+
+insert into transaction values(txn_id_seq.nextval,88888899999,98765432190,300.4,'successful','18-jan-2023');
+insert into transaction values(txn_id_seq.nextval,99999444555,000055555,154.0,'successful','09-feb-2023');
+
+insert into transaction values(txn_id_seq.nextval,98765432190,99999444555,854523.4,'failed','09-mar-2023');
+insert into transaction values(txn_id_seq.nextval,98765432190,88888899999,34523.34,'successful','24-apr-2023');
+
+insert into transaction values(txn_id_seq.nextval,98765400000,88888899999,1000.0,'successful','01-mar-2023');
+insert into transaction values(txn_id_seq.nextval,45678930,88888899999,45872.87,'successful','02-apr-2023');
+
+alter table transaction add foreign key(txn_from) references account(account_num);
+
+alter table transaction add foreign key(txn_to) references account(account_num);
+
+create into loan_App_id_seq start with 100 increment by 1;
+create sequence loan_scheme_seq start with 5000 increment by 1;
+
+insert into loan values(loan_App_id_seq.NEXTVAL, 50000.00, 7800.653, 5000, 100);
+insert into loan values(loan_App_id_seq.NEXTVAL, 100000.00, 7800.653, 5002, 101);
+insert into loan values(loan_App_id_seq.NEXTVAL, 250000.00, 7800.653, 5003, 102);
+insert into loan values(loan_App_id_seq.NEXTVAL, 64000.00, 7800.653, 5001, 103);
+
+alter table customer  

@@ -1,0 +1,73 @@
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-6 mt-3 col-sm-12">
+                <!-- A carousel with multiple images -->
+                <div class=" d-flex align-items-center">
+                    <div id="slide" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="BANK1.png" class="d-block w-100" alt="Slide 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="BANK2.jpg" class="d-block w-100" alt="Slide 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="BANK3.jpg" class="d-block w-100" alt="Slide 3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <!--carousel-->
+                  <div class="d-flex justify-content-space-around">
+                    <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/DLTE-FE-UC-003-HTMLCSS/BOB9621.jpg"  class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/DLTE-FE-UC-003-HTMLCSS/R (1).jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/DLTE-FE-UC-003-HTMLCSS/BOB9621.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+
+                <div class="container bg-secondary">
+                  <div class="row mt-4">
+                      <div class="col-lg-6 col-sm-12">
+
+                        <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+  <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
