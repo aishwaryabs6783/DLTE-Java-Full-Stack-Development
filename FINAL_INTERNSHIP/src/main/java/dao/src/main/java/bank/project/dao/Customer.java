@@ -14,7 +14,6 @@ import java.util.Collection;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//customer pojo
 public class Customer implements UserDetails {
     private int customer_id;
     private String customer_name;

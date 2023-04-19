@@ -31,6 +31,8 @@ public class BankService implements BankOperations , UserDetailsService {
     @Override
     //service to login using username
     public Customer getByUsername(String username) {
+
+
         try {
             Customer customer = jdbcTemplate.queryForObject("select * from CUSTOMER where USERNAME=?", new BankService.CustomerMapper(), username);
             logger.info("GetByUsername "+" "+username+ customer);
@@ -39,7 +41,6 @@ public class BankService implements BankOperations , UserDetailsService {
             return null;
         }
     }
-    //service to get attempts
     public int getAttempts(int id) {
         int attempts = jdbcTemplate.queryForObject("select FAILED_ATTEMPTS from CUSTOMER where CUSTOMER_ID=?",Integer.class,id);
         logger.info("Returned Attempts");
@@ -47,7 +48,7 @@ public class BankService implements BankOperations , UserDetailsService {
     }
 
     @Override
-    //service for incrementing attempts
+    //service for attempts
     public void incrementFailedAttempts(int id) {
         jdbcTemplate.update("update CUSTOMER set FAILED_ATTEMPTS = FAILED_ATTEMPTS + 1 where CUSTOMER_ID=?", id);
         jdbcTemplate.update("update CUSTOMER set CUSTOMER_STATUS='Inactive' where FAILED_ATTEMPTS=3");
@@ -85,7 +86,6 @@ public class BankService implements BankOperations , UserDetailsService {
             return jdbcTemplate.query("Select * from payee join customer on customer.customer_id = payee.customer_id where customer.username=? ",new PayeeMapper(),username);
 
         }
-        //service to get status of payee
     public void updateStatus() {
         jdbcTemplate.update("update customer set customer_status='Inactive' where attempts=3");
     }

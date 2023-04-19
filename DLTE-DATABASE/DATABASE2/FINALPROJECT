@@ -77,10 +77,6 @@ alter table branch add constraint branch_id_seq primary key(branch_id);
 alter table branch add foreign key(bank_id) references bank(bank_id);
 
 
-
-
-
-
 --Table ROLE--
 
 create table role(role_id int not null, role_name varchar(255) not null,role_desc varchar(255) not null,role_status varchar(255) not null, branch_id int not null, username varchar(255) not null, password varchar(255) not null);
@@ -92,16 +88,9 @@ alter table role add constraint role_seq primary key(role_id);
 alter table role add foreign key(branch_id) references branch(branch_id);
 
 
-
-
-
-
 --Table ADMIN loans--
 
 create table loan_scheme(loan_scheme_id int not null primary key , loan_scheme_type varchar(255) not null,loan_scheme_name varchar(255) not null,loan_scheme_desc varchar(255) not null, loan_scheme_roi float not null);
-
-
-
 
 --Table CUSTOMER--
 
@@ -112,11 +101,6 @@ create sequence customer_id_seq start with 100 increment by 1;
 alter table customer add constraint customer_id_seq primary key(customer_id);
 
 
-
-
-
-
-
 --Table PROIFLES--
 
 create table profile(profile_id int not null,profile_pan varchar(255) not null,profile_aadhaar int not null, profile_status varchar(255) not null, customer_id int not null);
@@ -124,11 +108,6 @@ create table profile(profile_id int not null,profile_pan varchar(255) not null,p
 alter table profile add constraint profile_id_seq primary key(profile_id);
 
 alter table profile add foreign key(customer_id) references customer(customer_id);
-
-
-
-
-
 
 --Table Account--
 
@@ -152,9 +131,6 @@ insert into payee values(payee_id_seq.nextval,'archana',98765432190,102);
 insert into payee values(payee_id_seq.nextval,'surya',88888899999,103);
 insert into payee values(payee_id_seq.nextval,'poo',99999444555,102);
 
-
-
-
 --Table TRANSACTION--
 
 create table transaction(txn_id int not null,txn_type varchar(255) not null,txn_from int not null,txn_to int not null,txn_amount float not null, txn_status varchar(255) not null, trans_date DATE not null);
@@ -165,12 +141,6 @@ alter table transaction add foreign key(txn_from) references account(account_id)
 
 alter table transaction add foreign key(txn_to) references account(account_id);
 
-
-
-
-
-
-
 --Table PAYEE--
 
 create table payee(payee_id int not null,payee_name varchar(255) not null,payee_account_number int not null,customer_id int not null);
@@ -180,11 +150,6 @@ alter table payee add constraint payee_id_seq primary key(payee_id);
 alter table payee add foreign key(customer_id) references customer(customer_id);
 
 alter table payee add foreign key(payee_account_number) references account(account_number);
-
-
-
-
-
 
 
 --Table Loan-project--

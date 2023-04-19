@@ -56,7 +56,15 @@
     </style>
     <script>
         $(document).ready(function() {
-            $("#btn").click(() => {
+            $("#add").click(() => {
+                //alert("click event")
+                window.location.href = "http://localhost:8082/web/add/";
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#update").click(() => {
                 //alert("click event")
                 window.location.href="http://localhost:8082/web/updatePayee/";
                 });
@@ -64,46 +72,66 @@
     </script>
 
     <script>
-
-        var user=sessionStorage.getItem("logged");
-        var soapRequest="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.bank.service\">\n" +
-            "   <soapenv:Header/>\n" +
-            "   <soapenv:Body>\n" +
-            "      <soap:listPayeeRequest>\n" +
-            "      <soap:username>"+user+"</soap:username>\n"+
-            "</soap:listPayeeRequest>"+
-            "</soapenv:Body>"+
-            "</soapenv:Envelope>";
-        // $(document).ready(()=>{
-            // var user=sessionStorage.getItem("logged");
-            // alert(user)
-            $.ajax({
-                url: "http://localhost:8082/PayeePoint",
-                type: "POST",
-                dataType: "xml",
-                contentType: "text/xml;charset=\"UTF-8\"",
-                data: soapRequest,
-                success: (data) => {
-                     // console.log(new XMLSerializer().serializeToString(data));
-                    $(data).find('ns2\\:payee').each(function() {
-                        var payeeId = $(this).find('ns2\\:payee_id').text();
-                        var payeeName = $(this).find('ns2\\:payee_name').text();
-                        var payeeAccNum = $(this).find('ns2\\:payee_account_number').text();
-                        var customerId = $(this).find('ns2\\:customer_id').text();
-// var customerId = $(this).find('ns2\\:customerId').text();
-                        console.log(payeeName+" "+payeeId)
-                        $("tbody").append("<tr><td>"+payeeId+"</td><td>"+payeeName+"</td></tr>");
-                    });
-                },
-                error:()=>{
-                    alert("error")
-                }
+        $(document).ready(function() {
+            $("#pay").click(() => {
+                //alert("click event")
+                window.location.href = "http://localhost:8082/web/pay/";
             });
+        });
+
+    </script>
+
+    <script>
+function showPayee(user) {
 
 
-        // })
+   // var user = sessionStorage.getItem("logged");
+    var soapRequest = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.bank.service\">\n" +
+        "   <soapenv:Header/>\n" +
+        "   <soapenv:Body>\n" +
+        "      <soap:listPayeeRequest>\n" +
+        "      <soap:username>" + user + "</soap:username>\n" +
+        "</soap:listPayeeRequest>" +
+        "</soapenv:Body>" +
+        "</soapenv:Envelope>";
+    // $(document).ready(()=>{
+    // var user=sessionStorage.getItem("logged");
+    // alert(user)
+    $.ajax({
+        url: "http://localhost:8082/PayeePoint",
+        type: "POST",
+        dataType: "xml",
+        contentType: "text/xml;charset=\"UTF-8\"",
+        data: soapRequest,
+        success: (data) => {
+            // console.log(new XMLSerializer().serializeToString(data));
+            $(data).find('ns2\\:payee').each(function () {
+                var payeeId = $(this).find('ns2\\:payee_id').text();
+                var payeeName = $(this).find('ns2\\:payee_name').text();
+                var payeeAccNum = $(this).find('ns2\\:payee_account_number').text();
+                var customerId = $(this).find('ns2\\:customer_id').text();
+// var customerId = $(this).find('ns2\\:customerId').text();
+                console.log(payeeName + " " + payeeId)
+                $("#payeeTable").append("<tr><td>" + payeeId + "</td><td>" + payeeName + "</td></tr>");
 
+            });
+        },
+        error: () => {
+            alert("error")
+        }
+    });
+}
 
+        $(document).ready(()=>{
+            $.ajax({
+                url: "http://localhost:8082/payee/username",
+                type: "GET",
+                success:(data) =>{
+                    showPayee(data)
+                }
+// getUserDetails(data)
+            })
+        })
 
     </script>
 </head>
@@ -118,18 +146,24 @@
         <img  src="/images/LOGO2.png" width="100px" height="100px">
     </div>
     <h5>AVAILABLE OPTIONS:</h5>
-    <button type="button" id="btn1" class=" btn col-2 btn-primary">ADD</button>
-    <button type="button" id="btn" class=" btn col-2 btn-success">UPDATE</button>
-    <button type="reset" class=" btn col-2 btn-primary">PAYMENT TRANSFER</button>
+    <button type="button" id="add" class=" btn col-2 btn-primary">ADD</button>
+    <button type="button" id="update" class=" btn col-2 btn-success">UPDATE</button>
+    <button type="reset" id="pay" class=" btn col-2 btn-primary">PAYMENT TRANSFER</button>
 
     <div class="row">
         <div class="table-responsive col-lg-8">
             <h2 class="text-dark">LIST OF PAYEES</h2>
             <table style="width: 90%; height: auto;">
+                <thead>
                 <tr>
                     <th>PAYEE ID</th>
                     <th>PAYEE NAME</th>
                 </tr>
+                </thead>
+                <tbody id="payeeTable">
+
+                </tbody>
+
             </table>
         </div>
         <div class="col-lg-4">

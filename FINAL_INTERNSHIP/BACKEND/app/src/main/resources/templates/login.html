@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,24 +19,23 @@
 
     </style>
     <script>
-        $(document).ready(()=> {
-
-            $("#btn").click(() => {
-                var username = $("input[name=Name]").val()
-                 //var username=$("input[name=Name]".val()
-                $.post('http://localhost:8082/aish/authenticate',{username:$("input[name=Name]").val(),password:$("input[name=Password]").val()},function(response){
-                    if(response == "Success"){
-                         sessionStorage.setItem("logged",username);
-                        window.location.href="http://localhost:8082/web/UI";
-                    }
-                    else{
-                        alert(response);
-                    }
-
-                });
-// alert("hello")
-            })
-        })
+        // $(document).ready(()=> {
+        //
+        //     $("#login").click(() => {
+        //         var username = $("input[name=Name]").val()
+        //          //var username=$("input[name=Name]".val()
+        //         $.post('http://localhost:8082/payee/authenticate',{username:$("input[name=Name]").val(),password:$("input[name=Password]").val()},function(response){
+        //             if(response == "Success"){
+        //                  sessionStorage.setItem("logged",username);
+        //                 window.location.href="http://localhost:8082/web/UI";
+        //             }
+        //             else{
+        //                 alert(response);
+        //             }
+        //
+        //         });
+        //     })
+        // })
     </script>
 </head>
 <body>
@@ -54,17 +53,20 @@
 
             <h1>Customer Login</h1>
             <div id="fm" >
-                <form>
+                <form th:action="@{/web/log}" method="post">
                     <div class="form group">
                         <label>Customer USERNAME</label>
-                        <input type="text" id="user"placeholder="Name" name="Name" class="form-control"/>
+                        <input type="text" id="username"placeholder="Name" name="username" class="form-control"/>
                     </div>
                     <div class="form group">
                         <label>Customer Password</label>
-                        <input type="password" id="password" placeholder="Password" name="Password" class="form-control"/>
+                        <input type="password" id="password" placeholder="Password" name="password" class="form-control"/>
+                    </div>
+                    <div th:if="${param.error}">
+                        <p class="text-dark">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
                     </div>
                     <div class="d-flex mt-4 row justify-content-around">
-                        <button type="button" id="btn" class=" btn col-2 btn-success">Login</button>
+                        <button type="submit" id="login" class=" btn col-2 btn-success">Login</button>
                         <button type="reset" class=" btn col-2 btn-primary">Reset</button>
                     </div>
                     <div >
@@ -73,7 +75,7 @@
                 </form>
             </div>
         </div>
-        <img class="col-lg-6 mt-6" src="/images/bankimage.jpg" height="300px" width="300px">
+        <img class="col-lg-6 mt-6" th:src="@{/images/bankimage.jpg}" height="300px" width="300px">
     </div>
 </div>
 </div>

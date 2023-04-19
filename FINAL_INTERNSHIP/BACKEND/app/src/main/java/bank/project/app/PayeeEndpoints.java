@@ -51,18 +51,6 @@ public class PayeeEndpoints {
         return response;
 
     }
-//    @PayloadRoot(namespace = url,localPart = "listPayeeRequest")
-//    @ResponsePayload
-//    public ListPayeeResponse listPayeeResponse(@RequestPayload ListPayeeRequest listPayeeRequest){
-////        logger.trace(listPayeeRequest.getId()+" received");
-//        ListPayeeResponse response=new ListPayeeResponse();
-//        service.bank.soap.Payee payee=new Payee();
-//
-//        BeanUtils.copyProperties(bankService.getByUsername(listPayeeRequest.getUsername()),payee);
-//        response.setPayee(payee);
-//
-//        return response;
-//}
 
 
 }

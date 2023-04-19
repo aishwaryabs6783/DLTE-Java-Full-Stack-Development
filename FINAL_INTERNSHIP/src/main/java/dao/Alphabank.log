@@ -1,0 +1,494 @@
+2023-04-19 11:38:09.990  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 3028 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 11:38:09.992  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:38:10.055  INFO 3028 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\xxbssssa\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxbssssa/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 11:38:10.056  INFO 3028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 11:38:10.056  INFO 3028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 11:38:10.664  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:38:10.679  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:38:11.228  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 11:38:11.247  INFO 3028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:38:11.247  INFO 3028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:38:11.311  INFO 3028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:38:11.311  INFO 3028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1254 ms
+2023-04-19 11:38:11.769  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 11:38:11.777  WARN 3028 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:38:12.180  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 11:38:12.494  INFO 3028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7869e76c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@331d21b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@10a14258, org.springframework.security.web.header.HeaderWriterFilter@64dba6b1, org.springframework.security.web.csrf.CsrfFilter@3cd8997b, org.springframework.security.web.authentication.logout.LogoutFilter@66960283, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@467ca630, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b67bb7b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@42bdc669, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@45999cee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ffdfeaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48805ae9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6353fc8, org.springframework.security.web.session.SessionManagementFilter@2e54c6a4, org.springframework.security.web.access.ExceptionTranslationFilter@4e4be5ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14eace0b]
+2023-04-19 11:38:12.529  INFO 3028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 11:38:12.565  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 11:38:12.574  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 3.03 seconds (JVM running for 4.023)
+2023-04-19 11:38:57.779  INFO 3028 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2023-04-19 11:38:57.889  INFO 3028 --- [Thread-13] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 11:38:57.905  INFO 3028 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 11:38:57.910  INFO 3028 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 11:39:01.957  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 3028 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 11:39:01.957  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:39:02.067  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:39:02.067  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:39:02.122  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 11:39:02.123  INFO 3028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:39:02.123  INFO 3028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:39:02.155  INFO 3028 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:39:02.161  INFO 3028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2023-04-19 11:39:02.224  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-19 11:39:02.224  WARN 3028 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:39:02.243  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-19 11:39:02.304  WARN 3028 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 08734855-cd0e-4e52-b4f1-02edf81f55ef
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-04-19 11:39:02.304  INFO 3028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ac73ccf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28726c97, org.springframework.security.web.context.SecurityContextPersistenceFilter@2970a9f4, org.springframework.security.web.header.HeaderWriterFilter@79caf93b, org.springframework.security.web.csrf.CsrfFilter@1caa3629, org.springframework.security.web.authentication.logout.LogoutFilter@2748c36b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f825243, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2e160c4e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@54f3390, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f00a30b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@524ee4ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ce3cc9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f0dd0c9, org.springframework.security.web.session.SessionManagementFilter@64a6c037, org.springframework.security.web.access.ExceptionTranslationFilter@3569d589, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@112070f0]
+2023-04-19 11:39:02.318  INFO 3028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 11:39:02.333  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 11:39:02.335  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.395 seconds (JVM running for 53.783)
+2023-04-19 11:39:02.335  INFO 3028 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-04-19 11:39:04.761  INFO 3028 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2023-04-19 11:39:04.856  INFO 3028 --- [Thread-20] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 11:39:04.871  INFO 3028 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-19 11:39:04.871  INFO 3028 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-19 11:39:05.012  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 3028 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 11:39:05.012  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:39:05.123  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:39:05.123  INFO 3028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:39:05.171  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 11:39:05.171  INFO 3028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:39:05.171  INFO 3028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:39:05.186  INFO 3028 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:39:05.186  INFO 3028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2023-04-19 11:39:05.281  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-19 11:39:05.281  WARN 3028 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:39:05.315  INFO 3028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-19 11:39:05.328  INFO 3028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e1bafb1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75c8404, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b2c23e3, org.springframework.security.web.header.HeaderWriterFilter@75ec9c6b, org.springframework.security.web.csrf.CsrfFilter@cead5ad, org.springframework.security.web.authentication.logout.LogoutFilter@1f680b9f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e457d24, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5e09a9b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22d57596, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6fc05ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40677e8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5179bd29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4460cf4c, org.springframework.security.web.session.SessionManagementFilter@131c9d5, org.springframework.security.web.access.ExceptionTranslationFilter@39e4469a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2eecfc5a]
+2023-04-19 11:39:05.339  INFO 3028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 11:39:05.344  INFO 3028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 11:39:05.344  INFO 3028 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.352 seconds (JVM running for 56.795)
+2023-04-19 11:39:05.344  INFO 3028 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' bankService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-04-19 11:39:09.122  INFO 32344 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 32344 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 11:39:09.122  INFO 32344 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:39:09.609  INFO 32344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:39:09.672  INFO 32344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:39:10.981  INFO 32344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 11:39:10.981  WARN 32344 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:39:11.490  INFO 32344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 11:39:11.995  INFO 32344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@759de304, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5649d11a, org.springframework.security.web.context.SecurityContextPersistenceFilter@76544c0a, org.springframework.security.web.header.HeaderWriterFilter@1e1eeedd, org.springframework.security.web.csrf.CsrfFilter@217bf99e, org.springframework.security.web.authentication.logout.LogoutFilter@39ee94de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16ac5d35, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3aaa3c39, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@294f9d50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40ac6b76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@650c405c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@748ac6f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27443560, org.springframework.security.web.session.SessionManagementFilter@7ec95456, org.springframework.security.web.access.ExceptionTranslationFilter@1943c1f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60a7e509]
+2023-04-19 11:39:12.105  INFO 32344 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 3.326 seconds (JVM running for 4.323)
+2023-04-19 11:39:12.990  INFO 32344 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 11:39:13.037  INFO 32344 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 11:39:13.085  INFO 32344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 11:39:13.096  INFO 32344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:33:11.346  INFO 9824 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 9824 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:33:11.361  INFO 9824 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:33:11.397  INFO 9824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\xxbssssa\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxbssssa/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 12:33:11.397  INFO 9824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 12:33:11.397  INFO 9824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 12:33:11.913  INFO 9824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:33:11.918  INFO 9824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:33:12.343  INFO 9824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 12:33:12.343  INFO 9824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:33:12.343  INFO 9824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:33:12.398  INFO 9824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:33:12.398  INFO 9824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 996 ms
+2023-04-19 12:33:12.691  INFO 9824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:33:12.691  WARN 9824 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:33:12.849  INFO 9824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:33:13.007  INFO 9824 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f1b6ea9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c9e4f95, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f140336, org.springframework.security.web.header.HeaderWriterFilter@253f6af0, org.springframework.security.web.csrf.CsrfFilter@c50ddd9, org.springframework.security.web.authentication.logout.LogoutFilter@25a9f416, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42bdc669, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ffee05a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4618c77b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6d6cc41b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19dce1b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73913643, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d4e2102, org.springframework.security.web.session.SessionManagementFilter@18ee57b7, org.springframework.security.web.access.ExceptionTranslationFilter@35012a42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ab73d69]
+2023-04-19 12:33:13.038  WARN 9824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-19 12:33:13.046  WARN 9824 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8082 is already in use
+2023-04-19 12:33:13.054  INFO 9824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:33:13.071  INFO 9824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:33:13.071  INFO 9824 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 12:33:13.087  INFO 9824 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-19 12:33:13.102 ERROR 9824 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2023-04-19 12:34:01.786  INFO 2600 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 2600 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:34:01.786  INFO 2600 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:34:02.243  INFO 2600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:34:02.258  INFO 2600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:34:03.360  INFO 2600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:34:03.360  WARN 2600 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:34:03.785  INFO 2600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:34:04.194  INFO 2600 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d858300, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76f881d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2db1b657, org.springframework.security.web.header.HeaderWriterFilter@1835dc92, org.springframework.security.web.csrf.CsrfFilter@7327a447, org.springframework.security.web.authentication.logout.LogoutFilter@58253c57, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7980cf2c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60990e5c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6dd36ab6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20a967fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43c57161, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2db33feb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50a13c2f, org.springframework.security.web.session.SessionManagementFilter@65a9ea3c, org.springframework.security.web.access.ExceptionTranslationFilter@68f6e55d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c0e00a8]
+2023-04-19 12:34:04.300  INFO 2600 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 2.774 seconds (JVM running for 3.624)
+2023-04-19 12:34:05.011  INFO 2600 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 12:34:05.043  INFO 2600 --- [main] bank.project.dao.Customer                : getByUsername
+2023-04-19 12:34:05.043  INFO 2600 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 12:34:05.090  INFO 2600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:34:05.108  INFO 2600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:39:39.982  INFO 31056 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 31056 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:39:39.982  INFO 31056 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:39:40.493  INFO 31056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:39:40.502  INFO 31056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:39:41.688  INFO 31056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:39:41.709  WARN 31056 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:39:42.066  INFO 31056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:39:42.540  INFO 31056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@93824eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7af52ec7, org.springframework.security.web.context.SecurityContextPersistenceFilter@14c93774, org.springframework.security.web.header.HeaderWriterFilter@124dac75, org.springframework.security.web.csrf.CsrfFilter@58658f63, org.springframework.security.web.authentication.logout.LogoutFilter@30ec7d21, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@610d28b8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67536ae0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77c1e611, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4997552e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18b74ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@493da830, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12c0c0b3, org.springframework.security.web.session.SessionManagementFilter@7b61bf11, org.springframework.security.web.access.ExceptionTranslationFilter@5a545b0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70721c12]
+2023-04-19 12:39:42.635  INFO 31056 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 2.928 seconds (JVM running for 3.847)
+2023-04-19 12:39:43.362  INFO 31056 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 12:39:43.393  INFO 31056 --- [main] bank.project.dao.Customer                : GetByUsernameCustomer(customer_id=100, customer_name=ash, customer_address=magadi, customer_status=XYZ Road,ABC Street,122, customer_contact=4567890, username=ashley, password=pass, failed_attempts=0)
+2023-04-19 12:39:43.393  INFO 31056 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 12:39:43.458  INFO 31056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:39:43.458  INFO 31056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:46:08.252  INFO 2280 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 2280 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:46:08.252  INFO 2280 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:46:08.710  INFO 2280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:46:08.710  INFO 2280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:46:09.830  INFO 2280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:46:09.839  WARN 2280 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:46:10.223  INFO 2280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:46:10.635  INFO 2280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35ef439e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4997552e, org.springframework.security.web.context.SecurityContextPersistenceFilter@315105f, org.springframework.security.web.header.HeaderWriterFilter@b73433, org.springframework.security.web.csrf.CsrfFilter@43c57161, org.springframework.security.web.authentication.logout.LogoutFilter@4f654cee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d858300, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@493da830, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7bcecef6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ae0cc89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40247d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14c93774, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46046c06, org.springframework.security.web.session.SessionManagementFilter@5a545b0f, org.springframework.security.web.access.ExceptionTranslationFilter@5b88b8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@294f9d50]
+2023-04-19 12:46:10.729  INFO 2280 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 2.744 seconds (JVM running for 3.549)
+2023-04-19 12:46:11.375  INFO 2280 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 12:46:11.406  INFO 2280 --- [main] bank.project.dao.Customer                : GetByUsername  ashleyCustomer(customer_id=100, customer_name=ash, customer_address=magadi, customer_status=XYZ Road,ABC Street,122, customer_contact=4567890, username=ashley, password=pass, failed_attempts=0)
+2023-04-19 12:46:11.406  INFO 2280 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 12:46:11.454  INFO 2280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:46:11.469  INFO 2280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:58:41.941  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 27216 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:58:41.941  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:58:41.972  INFO 27216 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\xxbssssa\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxbssssa/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 12:58:41.972  INFO 27216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 12:58:41.972  INFO 27216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 12:58:42.478  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:58:42.492  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:58:42.855  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 12:58:42.858  INFO 27216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:58:42.858  INFO 27216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:58:42.903  INFO 27216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:58:42.903  INFO 27216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 931 ms
+2023-04-19 12:58:43.186  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:58:43.186  WARN 27216 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:58:43.359  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:58:43.533  INFO 27216 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d3ca47a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10e2d656, org.springframework.security.web.context.SecurityContextPersistenceFilter@232bd1aa, org.springframework.security.web.header.HeaderWriterFilter@32a1079, org.springframework.security.web.csrf.CsrfFilter@54a1fb4e, org.springframework.security.web.authentication.logout.LogoutFilter@5cc1477e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ba0d674, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e08fa27, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@a01d9d7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@393ce0f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ea80c59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e2fb36e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6440ddb7, org.springframework.security.web.session.SessionManagementFilter@8b7653a, org.springframework.security.web.access.ExceptionTranslationFilter@c577661, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@176f09a3]
+2023-04-19 12:58:43.567  INFO 27216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 12:58:43.596  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 12:58:43.596  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 2.005 seconds (JVM running for 2.704)
+2023-04-19 12:58:55.213  INFO 27216 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 7 deletions, 3 modifications)
+2023-04-19 12:58:55.356  INFO 27216 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 12:58:55.371  INFO 27216 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:58:55.380  INFO 27216 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 12:58:55.497  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 27216 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:58:55.497  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:58:55.608  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:58:55.608  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:58:55.639  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 12:58:55.639  INFO 27216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:58:55.639  INFO 27216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:58:55.655  INFO 27216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:58:55.655  INFO 27216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 158 ms
+2023-04-19 12:58:55.749  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-19 12:58:55.749  WARN 27216 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:58:55.764  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-19 12:58:55.781  INFO 27216 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71afab7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74316d6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4550c8fe, org.springframework.security.web.header.HeaderWriterFilter@338b7530, org.springframework.security.web.csrf.CsrfFilter@73c141da, org.springframework.security.web.authentication.logout.LogoutFilter@6a08ea79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a00215f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1084d5a6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6fa0b06b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a1cdd30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70a9390a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1863e0da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63d905f2, org.springframework.security.web.session.SessionManagementFilter@3c668139, org.springframework.security.web.access.ExceptionTranslationFilter@ea76d6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22c4fbe7]
+2023-04-19 12:58:55.797  INFO 27216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 12:58:55.797  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 12:58:55.797  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.335 seconds (JVM running for 14.903)
+2023-04-19 12:58:55.797  INFO 27216 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-19 12:58:57.219  INFO 27216 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2023-04-19 12:58:57.319  INFO 27216 --- [Thread-17] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 12:58:57.329  INFO 27216 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-19 12:58:57.329  INFO 27216 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-19 12:58:57.454  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 27216 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:58:57.454  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:58:57.549  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:58:57.549  INFO 27216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:58:57.612  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 12:58:57.612  INFO 27216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:58:57.612  INFO 27216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:58:57.612  INFO 27216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:58:57.627  INFO 27216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 173 ms
+2023-04-19 12:58:57.691  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-19 12:58:57.691  WARN 27216 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:58:57.723  INFO 27216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-19 12:58:57.739  INFO 27216 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c6617bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e276db0, org.springframework.security.web.context.SecurityContextPersistenceFilter@55781ae, org.springframework.security.web.header.HeaderWriterFilter@3b084359, org.springframework.security.web.csrf.CsrfFilter@6dc55c88, org.springframework.security.web.authentication.logout.LogoutFilter@76f77348, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@629ddfc0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d197ccd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32c8d66b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@710ecc9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b2f2c1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4244b2ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35258682, org.springframework.security.web.session.SessionManagementFilter@4231b47c, org.springframework.security.web.access.ExceptionTranslationFilter@745943f5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78715851]
+2023-04-19 12:58:57.739  INFO 27216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 12:58:57.756  INFO 27216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 12:58:57.756  INFO 27216 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.323 seconds (JVM running for 16.856)
+2023-04-19 12:58:57.756  INFO 27216 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-19 12:58:58.104  INFO 32096 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 32096 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 12:58:58.104  INFO 32096 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:58:58.561  INFO 32096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:58:58.561  INFO 32096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:58:59.712  INFO 32096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:58:59.727  WARN 32096 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:59:00.168  INFO 32096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:59:00.547  INFO 32096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@de7e193, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13e5d243, org.springframework.security.web.context.SecurityContextPersistenceFilter@2be21396, org.springframework.security.web.header.HeaderWriterFilter@5b88b8e, org.springframework.security.web.csrf.CsrfFilter@2db1b657, org.springframework.security.web.authentication.logout.LogoutFilter@1665fa54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@405b6d75, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18b74ea, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@35ef439e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6b6eae52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@315105f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40247d48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4997552e, org.springframework.security.web.session.SessionManagementFilter@b73433, org.springframework.security.web.access.ExceptionTranslationFilter@64c781a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@759de304]
+2023-04-19 12:59:00.626  INFO 32096 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 2.828 seconds (JVM running for 3.727)
+2023-04-19 12:59:01.289  INFO 32096 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 12:59:01.320  INFO 32096 --- [main] bank.project.dao.Customer                : GetByUsername  ashleyCustomer(customer_id=100, customer_name=ash, customer_address=magadi, customer_status=XYZ Road,ABC Street,122, customer_contact=4567890, username=ashley, password=pass, failed_attempts=0)
+2023-04-19 12:59:01.320  INFO 32096 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 12:59:01.368  INFO 32096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 12:59:01.379  INFO 32096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 14:31:38.362  INFO 22572 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 22572 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 14:31:38.366  INFO 22572 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:31:38.412  INFO 22572 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\xxbssssa\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxbssssa/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 14:31:38.412  INFO 22572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 14:31:38.412  INFO 22572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 14:31:38.981  INFO 22572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 14:31:38.991  INFO 22572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-19 14:31:39.504  INFO 22572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 14:31:39.511  INFO 22572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 14:31:39.512  INFO 22572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 14:31:39.576  INFO 22572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 14:31:39.576  INFO 22572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2023-04-19 14:31:39.943  INFO 22572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 14:31:39.943  WARN 22572 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 14:31:40.201  INFO 22572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 14:31:40.391  INFO 22572 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bb99bab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45f39fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@70637023, org.springframework.security.web.header.HeaderWriterFilter@1a3d5443, org.springframework.security.web.csrf.CsrfFilter@1d3314d8, org.springframework.security.web.authentication.logout.LogoutFilter@44fd8d02, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@393ce0f0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58828ebc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@17f2f6e1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5ce7aa31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43c9997d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4db0c17e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59c9dbb0, org.springframework.security.web.session.SessionManagementFilter@3bbd4f7, org.springframework.security.web.access.ExceptionTranslationFilter@4d052e76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21b0f84b]
+2023-04-19 14:31:40.421  WARN 22572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-19 14:31:40.451  WARN 22572 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8082 is already in use
+2023-04-19 14:31:40.456  INFO 22572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 14:31:40.467  INFO 22572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 14:31:40.472  INFO 22572 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 14:31:40.483  INFO 22572 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-19 14:31:40.505 ERROR 22572 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2023-04-19 14:32:15.451  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 25780 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 14:32:15.456  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:32:15.501  INFO 25780 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\xxbssssa\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxbssssa/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 14:32:15.501  INFO 25780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 14:32:15.501  INFO 25780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 14:32:16.051  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 14:32:16.061  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 14:32:16.556  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 14:32:16.561  INFO 25780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 14:32:16.561  INFO 25780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 14:32:16.611  INFO 25780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 14:32:16.611  INFO 25780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1110 ms
+2023-04-19 14:32:16.951  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 14:32:16.951  WARN 25780 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 14:32:17.151  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 14:32:17.356  INFO 25780 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57f86e70, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57db58eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a31f28e, org.springframework.security.web.header.HeaderWriterFilter@7365538c, org.springframework.security.web.csrf.CsrfFilter@773f276c, org.springframework.security.web.authentication.logout.LogoutFilter@9a6c214, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@685ce413, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@a687a6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b812523, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f1b6ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4427fdc1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bfec8fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@114e7d33, org.springframework.security.web.session.SessionManagementFilter@ce3895a, org.springframework.security.web.access.ExceptionTranslationFilter@73ebe6ce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7366e54b]
+2023-04-19 14:32:17.422  INFO 25780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 14:32:17.463  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 14:32:17.482  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 2.422 seconds (JVM running for 3.189)
+2023-04-19 14:32:50.416  INFO 25780 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2023-04-19 14:32:50.526  INFO 25780 --- [Thread-12] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 14:32:50.536  INFO 25780 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 14:32:50.549  INFO 25780 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 14:32:54.581  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 25780 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 14:32:54.581  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:32:54.731  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 14:32:54.734  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2023-04-19 14:32:54.783  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 14:32:54.783  INFO 25780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 14:32:54.783  INFO 25780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 14:32:54.797  INFO 25780 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-04-19 14:32:54.797  INFO 25780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 206 ms
+2023-04-19 14:32:54.911  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-19 14:32:54.911  WARN 25780 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 14:32:54.943  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-19 14:32:54.973  WARN 25780 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dad4e452-6523-4194-a132-1fd4d5153ef5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-04-19 14:32:54.981  INFO 25780 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f2b913c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771bb6ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@59d5d2d6, org.springframework.security.web.header.HeaderWriterFilter@3583f10d, org.springframework.security.web.csrf.CsrfFilter@17d384f9, org.springframework.security.web.authentication.logout.LogoutFilter@313c6640, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79d0a957, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2546d037, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@bfd236f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@469574e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ecdac11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ec3f5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66a26c9f, org.springframework.security.web.session.SessionManagementFilter@52aa7036, org.springframework.security.web.access.ExceptionTranslationFilter@1f5902c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70f91e25]
+2023-04-19 14:32:54.991  INFO 25780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 14:32:55.000  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 14:32:55.001  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.439 seconds (JVM running for 40.707)
+2023-04-19 14:32:55.005  INFO 25780 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-04-19 14:32:57.454  INFO 25780 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2023-04-19 14:32:57.581  INFO 25780 --- [Thread-18] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-19 14:32:57.597  INFO 25780 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-19 14:32:57.606  INFO 25780 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-19 14:32:57.741  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02VBF6 with PID 25780 (C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao\target\classes started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 14:32:57.741  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:32:57.891  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 14:32:57.897  INFO 25780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+2023-04-19 14:32:57.951  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-04-19 14:32:57.951  INFO 25780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 14:32:57.951  INFO 25780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 14:32:57.971  INFO 25780 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-04-19 14:32:57.971  INFO 25780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2023-04-19 14:32:58.061  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-19 14:32:58.061  WARN 25780 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 14:32:58.093  INFO 25780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-19 14:32:58.111  INFO 25780 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14e29700, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3afe756b, org.springframework.security.web.context.SecurityContextPersistenceFilter@21b7e795, org.springframework.security.web.header.HeaderWriterFilter@7a7167c1, org.springframework.security.web.csrf.CsrfFilter@37fe915e, org.springframework.security.web.authentication.logout.LogoutFilter@540f3960, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@411924c1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@16373a92, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@324971d9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58a7fd81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29bdd4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73a5edb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5565c9e4, org.springframework.security.web.session.SessionManagementFilter@6200eeea, org.springframework.security.web.access.ExceptionTranslationFilter@945595d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15677aa5]
+2023-04-19 14:32:58.116  INFO 25780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19 14:32:58.126  INFO 25780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-04-19 14:32:58.131  INFO 25780 --- [restartedMain] bank.project.dao.DaoApplication          : Started DaoApplication in 0.41 seconds (JVM running for 43.835)
+2023-04-19 14:32:58.131  INFO 25780 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' bankService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-04-19 14:33:02.766  INFO 13956 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Starting SpringOracleJdbcTemplateSlf4jApplicationTests using Java 1.8.0_292 on WPG02VBF6 with PID 13956 (started by xxbssssa in C:\DLTE-FULL-STACK-DEVELOPMENT\FINAL_INTERNSHIP\backend\dao)
+2023-04-19 14:33:02.766  INFO 13956 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:33:03.351  INFO 13956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 14:33:03.363  INFO 13956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2023-04-19 14:33:04.871  INFO 13956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 14:33:04.884  WARN 13956 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 14:33:05.451  INFO 13956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 14:33:06.011  INFO 13956 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2539cd1c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c20cdd0, org.springframework.security.web.context.SecurityContextPersistenceFilter@71ed560f, org.springframework.security.web.header.HeaderWriterFilter@4a92c6a9, org.springframework.security.web.csrf.CsrfFilter@6fff46bf, org.springframework.security.web.authentication.logout.LogoutFilter@d16be4f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ddb774f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@315105f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@74606204, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50a13c2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58253c57, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bf14704, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b6eae52, org.springframework.security.web.session.SessionManagementFilter@4cb702ce, org.springframework.security.web.access.ExceptionTranslationFilter@21263314, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4dde8976]
+2023-04-19 14:33:06.136  INFO 13956 --- [main] gOracleJdbcTemplateSlf4jApplicationTests : Started SpringOracleJdbcTemplateSlf4jApplicationTests in 3.7 seconds (JVM running for 4.846)
+2023-04-19 14:33:07.134  INFO 13956 --- [main] bank.project.dao.Customer                : updated
+2023-04-19 14:33:07.176  INFO 13956 --- [main] bank.project.dao.Customer                : GetByUsername  ashleyCustomer(customer_id=100, customer_name=ash, customer_address=magadi, customer_status=XYZ Road,ABC Street,122, customer_contact=4567890, username=ashley, password=pass, failed_attempts=0)
+2023-04-19 14:33:07.186  INFO 13956 --- [main] bank.project.dao.Customer                :  Get by username 
+2023-04-19 14:33:07.236  INFO 13956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-19 14:33:07.251  INFO 13956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

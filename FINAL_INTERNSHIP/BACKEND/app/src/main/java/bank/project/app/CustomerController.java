@@ -10,13 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.ResourceBundle;
 
 
 @ComponentScan("bank.project.dao")
 @RestController
-@RequestMapping("/aish")
+@RequestMapping("/payee")
 public class CustomerController {
     @Autowired
     private BankService bankService;
@@ -31,14 +32,20 @@ public class CustomerController {
 //
 //    }
 
-    @DeleteMapping("/{id}")
-    public String callDelete(@PathVariable("id") int id) {
-        logger.error("Controller about to delete record based on " + id);
-        return bankService.deletePayee(id);
-    }
+//    @DeleteMapping("/{id}")
+//    public String callDelete(@PathVariable("id") int id) {
+//        logger.error("Controller about to delete record based on " + id);
+//        return bankService.deletePayee(id);
+//    }
+    //to fetch list of customers
     @GetMapping("/")
     public List<Customer> callList(){
         return bankService.listCustomer();
+    }
+
+    @GetMapping("/username")
+    String getUserName(Principal principal){
+        return principal.getName();
     }
 
 
@@ -60,7 +67,7 @@ public class CustomerController {
                 return resourceBundle.getString("db_success");
         }
     }
-
+        //to update payee details
         @PostMapping("/update")
         public String update (@RequestParam("payeeId") Integer payeeId, @RequestParam("payeeName") String
         payeeName, @RequestParam("payeeAccountNumber") Long payeeAccountNumber, @RequestParam("customerId") Integer
@@ -73,6 +80,7 @@ public class CustomerController {
             logger.info("trying to update");
             return bankService.updatePayee(payee);
         }
+
     }
 
 
