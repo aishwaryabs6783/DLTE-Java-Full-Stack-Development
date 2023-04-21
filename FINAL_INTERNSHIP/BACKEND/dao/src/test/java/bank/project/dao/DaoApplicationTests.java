@@ -61,7 +61,7 @@ class SpringOracleJdbcTemplateSlf4jApplicationTests {
     public void testUpdateProfile(){
         Payee p1=new Payee(108,"aafil",1234566789L,101);
         when(jdbcTemplate.queryForObject(eq("update payee set payee_name=?, payee_account_number=?,customer_id=? where payee_id=?"),any(RowMapper.class),eq(p1.getPayeeId()),eq(p1.getPayeeName()),eq(p1.getPayeeAccountNumber()),eq(p1.getCustomerId()))).thenReturn(p1);
-        assertEquals("108 has updated",bankService.updatePayee(p1));
+        assertEquals("108has updated",bankService.updatePayee(p1));
     }
     @Test
     //testing to get payee by id

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,9 +82,15 @@
     </script>
 
     <script>
+
+        let payee_id
+        let customer_id
+        function update(payeeId,customerId) {
+            sessionStorage.setItem("customer_id",customerId)
+            sessionStorage.setItem("payee_id",payeeId)
+            window.location.href="http://localhost:8082/web/updatePayee"
+        }
 function showPayee(user) {
-
-
    // var user = sessionStorage.getItem("logged");
     var soapRequest = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.bank.service\">\n" +
         "   <soapenv:Header/>\n" +
@@ -94,8 +100,6 @@ function showPayee(user) {
         "</soap:listPayeeRequest>" +
         "</soapenv:Body>" +
         "</soapenv:Envelope>";
-    // $(document).ready(()=>{
-    // var user=sessionStorage.getItem("logged");
     // alert(user)
     $.ajax({
         url: "http://localhost:8082/PayeePoint",
@@ -110,9 +114,8 @@ function showPayee(user) {
                 var payeeName = $(this).find('ns2\\:payee_name').text();
                 var payeeAccNum = $(this).find('ns2\\:payee_account_number').text();
                 var customerId = $(this).find('ns2\\:customer_id').text();
-// var customerId = $(this).find('ns2\\:customerId').text();
                 console.log(payeeName + " " + payeeId)
-                $("#payeeTable").append("<tr><td>" + payeeId + "</td><td>" + payeeName + "</td></tr>");
+                $("#payeeTable").append("<tr><td>" + payeeId + "</td><td>" + payeeName + "</td><td><button type='button' class='btn btn-success' onclick=\"update('"+payeeId+"',"+customerId+")\"> update </button></td></tr>");
 
             });
         },
@@ -140,11 +143,15 @@ function showPayee(user) {
 <marquee class="text-dark" direction="right">
     <p>Welcome tpo ALPHA bank,happy login!!!!Bank never asks you to share passwords,Beware of fraud sms!!!!!!!!</p>
 </marquee>
+<p align="right">
+    <a th:href="@{/logout}" ><button type="submit" value="logout" >LOGOUT</button></a>
+</p>
 <div class="=container">
 
     <div class="d-flex justify-content-center mt-1">
         <img  src="/images/LOGO2.png" width="100px" height="100px">
     </div>
+
     <h5>AVAILABLE OPTIONS:</h5>
     <button type="button" id="add" class=" btn col-2 btn-primary">ADD</button>
     <button type="button" id="update" class=" btn col-2 btn-success">UPDATE</button>
@@ -158,6 +165,7 @@ function showPayee(user) {
                 <tr>
                     <th>PAYEE ID</th>
                     <th>PAYEE NAME</th>
+                    <th>OPTION</th>
                 </tr>
                 </thead>
                 <tbody id="payeeTable">
@@ -167,6 +175,7 @@ function showPayee(user) {
             </table>
         </div>
         <div class="col-lg-4">
+
             <div class="search-container">
                 <form action="">
                     <input type="text" placeholder="Search payee" name="search">

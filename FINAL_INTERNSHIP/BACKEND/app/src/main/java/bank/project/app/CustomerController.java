@@ -24,50 +24,13 @@ public class CustomerController {
     Logger logger=LoggerFactory.getLogger(Customer.class);
     ResourceBundle resourceBundle=ResourceBundle.getBundle("property");
 
-//    @PutMapping("/updatePayee")
-//    public String callUpdate(@RequestBody Payee payee) {
-//        System.out.println(payee);
-//       // logger.info(payee.getPayee_id() + " has trying to update the profile");
-//        return bankService.updatePayee(payee);
-//
-//    }
-
-//    @DeleteMapping("/{id}")
-//    public String callDelete(@PathVariable("id") int id) {
-//        logger.error("Controller about to delete record based on " + id);
-//        return bankService.deletePayee(id);
-//    }
-    //to fetch list of customers
-    @GetMapping("/")
-    public List<Customer> callList(){
-        return bankService.listCustomer();
-    }
 
     @GetMapping("/username")
     String getUserName(Principal principal){
         return principal.getName();
     }
 
-
-    @PostMapping("/authenticate")
-    public String callLogin(@RequestParam("username") String username,@RequestParam("password") String password) {
-        logger.info("Entered sample function");
-        Customer customer = bankService.getByUsername(username);
-        System.out.println(customer);
-        if (customer == null)
-            return resourceBundle.getString("db_user");
-        else {
-            logger.info(customer.getCustomer_status());
-            if (customer.getCustomer_status().equalsIgnoreCase("Inactive"))
-                return resourceBundle.getString("db_unsuccessfull");
-            if (!password.equals(customer.getPassword())) {
-                bankService.incrementFailedAttempts(customer.getCustomer_id());
-                return resourceBundle.getString("db_incorrect_pw");
-            } else
-                return resourceBundle.getString("db_success");
-        }
-    }
-        //to update payee details
+   // to update payee details
         @PostMapping("/update")
         public String update (@RequestParam("payeeId") Integer payeeId, @RequestParam("payeeName") String
         payeeName, @RequestParam("payeeAccountNumber") Long payeeAccountNumber, @RequestParam("customerId") Integer

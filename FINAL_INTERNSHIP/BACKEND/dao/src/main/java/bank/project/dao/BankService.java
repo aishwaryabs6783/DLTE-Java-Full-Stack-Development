@@ -25,7 +25,7 @@ import java.util.ResourceBundle;
 public class BankService implements BankOperations , UserDetailsService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    Logger logger= LoggerFactory.getLogger(Customer.class);
+    Logger logger= LoggerFactory.getLogger(BankService.class);
     ResourceBundle resourceBundle=ResourceBundle.getBundle("property");
 
     @Override
@@ -45,6 +45,11 @@ public class BankService implements BankOperations , UserDetailsService {
         logger.info("Returned Attempts");
         return attempts;
     }
+    //service to set attempts
+    public void setAttempts(int id){
+        jdbcTemplate.update("update customer set failed_attempts=3 where customer_id=?",id);
+        logger.info("set attempts to 3");
+    }
 
     @Override
     //service for incrementing attempts
@@ -55,11 +60,11 @@ public class BankService implements BankOperations , UserDetailsService {
     //service to update payee
     @Override
     public String updatePayee(Payee payee) {
-        String information = payee.getPayeeId()+ " has updated";
+        //String information = payee.getPayeeId()+ " has updated";
         logger.info("updated");
         jdbcTemplate.update("update payee set payee_name=?, payee_account_number=?,customer_id=? where payee_id=?",
                 new Object[]{payee.getPayeeName(), payee.getPayeeAccountNumber(),payee.getCustomerId(),payee.getPayeeId()});
-        return information;
+        return payee.getPayeeId()+resourceBundle.getString("db_update");
     }
 
 //        @Override

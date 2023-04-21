@@ -17,6 +17,7 @@ package bank.project.app;
 
 @EnableWs
 @Configuration
+//soap configuration for payee
 public class PayeeConfiguration extends WsConfigurerAdapter {
     @Bean(name = "payee")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema payeeSchema){
@@ -28,6 +29,7 @@ public class PayeeConfiguration extends WsConfigurerAdapter {
         return schemaObject;
     }
     @Bean
+    //payee schema
     public XsdSchema payeeSchema(){
         return new SimpleXsdSchema(new ClassPathResource("Payee.xsd"));
     }

@@ -33,9 +33,11 @@ public class BankSecurity {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
          httpSecurity.authorizeRequests((requests)->{
-        // requests.antMatchers("/resources/images/**").authenticated();
-        // requests.antMatchers("/web/**").authenticated();
-        requests.anyRequest().permitAll();
+         requests.antMatchers("/resources/images/**").authenticated();
+         requests.antMatchers("/web/UI").authenticated();
+         requests.antMatchers("/web/log").permitAll();
+         requests.antMatchers("/web/updatePayee").authenticated();
+//        requests.anyRequest().permitAll();
         // requests.anyRequest().permitAll();
          });
 

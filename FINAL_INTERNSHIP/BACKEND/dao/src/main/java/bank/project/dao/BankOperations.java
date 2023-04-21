@@ -11,4 +11,5 @@ public interface BankOperations {
     public List<Payee> listPayee(String username);
     public int getAttempts(int id);
     public void updateStatus();
+    public void setAttempts(int id);
 }

@@ -18,53 +18,35 @@
         }
 
     </style>
-    <script>
-        // $(document).ready(()=> {
-        //
-        //     $("#login").click(() => {
-        //         var username = $("input[name=Name]").val()
-        //          //var username=$("input[name=Name]".val()
-        //         $.post('http://localhost:8082/payee/authenticate',{username:$("input[name=Name]").val(),password:$("input[name=Password]").val()},function(response){
-        //             if(response == "Success"){
-        //                  sessionStorage.setItem("logged",username);
-        //                 window.location.href="http://localhost:8082/web/UI";
-        //             }
-        //             else{
-        //                 alert(response);
-        //             }
-        //
-        //         });
-        //     })
-        // })
-    </script>
+
 </head>
 <body>
 
 <marquee class="text-light" direction="right">
-    <p>Welcome tpo ALPHA bank,happy login!!!!Bank never asks you to share passwords,Beware of fraud sms!!!!!!!!</p>
+    <p>Welcome to ALPHA bank,happy login!!!!Bank never asks you to share passwords or OTPs,Beware of fraud sms!!!!!!!!</p>
 </marquee>
 <div class=" d-flex justify-content-center mt-2">
     <img src="/images/LOGO2.png" width="100px" height="100px">
 </div>
 <div class="container bg-white">
     <div class="row mt-4">
-
         <div class=" col-lg-6 ">
-
             <h1>Customer Login</h1>
             <div id="fm" >
+<!--                login form-->
                 <form th:action="@{/web/log}" method="post">
                     <div class="form group">
-                        <label>Customer USERNAME</label>
-                        <input type="text" id="username"placeholder="Name" name="username" class="form-control"/>
+                        <label class="required">Customer Username</label>
+                        <input type="text" id="username"placeholder="Name" name="username" class="form-control" required/>
                     </div>
                     <div class="form group">
-                        <label>Customer Password</label>
-                        <input type="password" id="password" placeholder="Password" name="password" class="form-control"/>
+                        <label class="required">Customer Password</label>
+                        <input type="password" id="password" placeholder="Password" name="password" class="form-control" required/>
                     </div>
                     <div th:if="${param.error}">
                         <p class="text-dark">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
                     </div>
+<!--                    button class-->
                     <div class="d-flex mt-4 row justify-content-around">
                         <button type="submit" id="login" class=" btn col-2 btn-success">Login</button>
                         <button type="reset" class=" btn col-2 btn-primary">Reset</button>
@@ -75,6 +57,7 @@
                 </form>
             </div>
         </div>
+<!--        image -->
         <img class="col-lg-6 mt-6" th:src="@{/images/bankimage.jpg}" height="300px" width="300px">
     </div>
 </div>

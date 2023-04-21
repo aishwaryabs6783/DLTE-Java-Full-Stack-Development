@@ -28,6 +28,7 @@ public class LoginFailureHandler extends SimpleUrlAuthenticationFailureHandler {
         Customer customer=bankService.getByUsername(userName);
         if(customer==null){
             exception=new LockedException(bundle.getString("db_user"));
+            super.setDefaultFailureUrl("/web/log/?error="+ bundle.getString("db_user"));
         }
         else{
             if(customer.getCustomer_status().equalsIgnoreCase("inactive")){

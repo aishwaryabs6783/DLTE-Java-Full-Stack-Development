@@ -66,9 +66,17 @@
         .col{
             flex:6;
         }
+        .required::after{
+            content:"*" ;
+            color: red;
+            font-size: 20px;
+        }
     </style>
     <script>
         $(document).ready(function () {
+
+            $("input[name=PayeeId]").val(sessionStorage.getItem("payee_id"))
+           $("input[name=CustomerId]").val(sessionStorage.getItem("customer_id"))
             $("#update").click(() => {
                 // let payeeId = $("input[name=payeeId]").val()
                 // alert("hellooo")
@@ -84,8 +92,9 @@
                     customerId:customerId
                 }, function (data) {
                     alert(data)
+                    window.location.href="http://localhost:8082/web/UI";
                 })
-                window.location.href="http://localhost:8082/web/UI";
+
             })
         })
     </script>
@@ -93,38 +102,42 @@
 
 </head>
 <body>
-
+<p align="right">
+    <a th:href="@{/logout}" ><button type="submit" value="logout" >LOGOUT</button></a>
+</p>
+<!--logo-->
 <img th:src="@{/images/LOGO2.png}">
 <h1 class="title">UPDATE PAYEE </h1>
-<div class="container">
 
+<div class="container">
+<!--    form to update payee-->
     <form class="child">
         <img th:src="@{/images/logo1.jpg}">
 
         <div class="grp">
-            <labeL>PAYEE ID</labeL>
-            <input type ="text" name="PayeeId" placeholder="ID">
+            <label class="required">PAYEE ID</label>
+            <input type ="text" name="PayeeId" placeholder="ID" disabled>
         </div>
         <div class="grp">
-            <labeL>PAYEE NAME</labeL>
-            <input type ="text" name="PayeeName" placeholder="NAME AS PER AADHAR">
+            <label class="required">PAYEE NAME</label>
+            <input type ="text" name="PayeeName" placeholder="NAME AS PER AADHAR" required>
 
         </div>
         <div class="grp">
-            <labeL>PAYEE ACCOUNT NUMBER </labeL>
-            <input type ="text" name="PayeeAccountNumber" placeholder="ACCOUNT NUMBER">
+            <label class="required">PAYEE ACCOUNT NUMBER </label>
+            <input type ="text" name="PayeeAccountNumber" placeholder="ACCOUNT NUMBER" required>
 
         </div>
 
         <div class="grp">
-            <labeL>CUSTOMER ID</labeL>
-            <input type ="text" name="CustomerId" placeholder="CUSTOMER ID">
+            <label class="required">CUSTOMER ID</label>
+            <input type ="text" name="CustomerId" placeholder="CUSTOMER ID" required disabled>
         </div>
+<!--        button-->
         <div class="d-flex mt-4 row justify-content-around">
             <button type="button" id="update" class=" btn col-3 btn-success">UPDATE</button>
             <input type="reset" id="btn" class="btn col-3 btn-primary" value="Clear">
 <!--            <button type="reset" id="btn2"  class=" btn col-3 btn-primary">DELETE</button>-->
-
         </div>
 
     </form>

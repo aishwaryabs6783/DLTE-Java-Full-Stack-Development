@@ -20,6 +20,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 
+//payee endpoints
 @Endpoint
 public class PayeeEndpoints {
     private static final String url="http://soap.bank.service";

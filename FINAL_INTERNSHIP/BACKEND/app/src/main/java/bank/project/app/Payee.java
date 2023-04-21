@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+//payee pojo
 public class Payee {
         private int payeeId;
         private String payeeName;
