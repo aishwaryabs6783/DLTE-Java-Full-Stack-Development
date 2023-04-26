@@ -60,28 +60,15 @@ public class BankService implements BankOperations , UserDetailsService {
     //service to update payee
     @Override
     public String updatePayee(Payee payee) {
-        //String information = payee.getPayeeId()+ " has updated";
+        jdbcTemplate.update("update payee set payee_name=?, payee_account_number=?,customer_id=? where payee_id=?", payee.getPayeeName(), payee.getPayeeAccountNumber(),payee.getCustomerId(),payee.getPayeeId());
         logger.info("updated");
-        jdbcTemplate.update("update payee set payee_name=?, payee_account_number=?,customer_id=? where payee_id=?",
-                new Object[]{payee.getPayeeName(), payee.getPayeeAccountNumber(),payee.getCustomerId(),payee.getPayeeId()});
         return payee.getPayeeId()+resourceBundle.getString("db_update");
     }
 
-//        @Override
-//        public String deletePayee(int id){
-//            String information=getPayeeById(id).get().getPayeeName()+" has deleted";
-//            logger.info("deleted");
-//            jdbcTemplate.update("delete from payee where payee_id=?",new Object[]{id});
-//            return information;
-//        }
         @Override
         public Optional<Payee> getPayeeById(int id){
             return Optional.of(jdbcTemplate.queryForObject("select * from payee where payee_id=?",new Object[]{id},
                     new BeanPropertyRowMapper<>(Payee.class)));
-        }
-        //service to list customers
-        public List<Customer>listCustomer(){
-            return jdbcTemplate.query("select * from customer",new CustomerMapper());
         }
 
         //service to list payee
@@ -92,19 +79,27 @@ public class BankService implements BankOperations , UserDetailsService {
         }
         //service to get status of payee
     public void updateStatus() {
-        jdbcTemplate.update("update customer set customer_status='Inactive' where attempts=3");
+        jdbcTemplate.update("update customer set customer_status='Inactive' where failed_attempts=3");
     }
+
+
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Customer customer=getByUsername(username);
+        logger.info("Entered loadUserByUsername() method");
+        Customer customer = getByUsername(username);
         logger.info("LoadByUsername " + username + " "+ customer);
-        if(customer==null)
-            throw new UsernameNotFoundException("Invalid username");
-        logger.info(customer.toString());
+
+        if (customer == null){
+            throw new UsernameNotFoundException(resourceBundle.getString("db_user"));
+        }
+        logger.info("Leaving loadByUsername() method");
+        if (customer.getCustomer_status().equalsIgnoreCase("inactive")){
+            throw new UsernameNotFoundException(resourceBundle.getString("db_unsuccessfull"));
+        }
         return customer;
     }
-
+//to transfer data between object and database
     class CustomerMapper implements RowMapper<Customer> {
         @Override
         public Customer mapRow(ResultSet rs, int rowNum) throws SQLException {

@@ -13,7 +13,6 @@
     <title>UPDATE PAYEE</title>
     <style>
         img{
-
             width: 400px;
             height:200px;
         }
@@ -42,11 +41,7 @@
 
 
         }
-        .grp{
-            display:flex;
-            justify-content:space-between;
-            padding:8px;
-        }
+
         label{
             flex:4;
         }
@@ -73,27 +68,70 @@
         }
     </style>
     <script>
-        $(document).ready(function () {
 
+        $(document).ready(function () {
+            $('#name').on('input', function () {
+                console.log("Entered the valid username");
+                var name = $(this).val();
+                var validName = /^[a-z]{3,}$/;
+                if (name.length === 0) {
+                    $('.payeeName').addClass('invalid-msg').text("name is required!!");
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else if (!validName.test(name)) {
+                    $('.payeeName').addClass('invalid-msg').text('name must be alphabets,must be minimum 3 characters!!');
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else {
+                    $('.payeeName').empty();
+                    $(this).addClass('valid-input').removeClass('invalid-input');
+                }
+            });
+
+            $('#actNum').on('input', function () {
+                console.log("Entered Account number validation")
+                var account = $(this).val();
+                var validNumber = /^[0-9]{12}$/;
+                if (account.length == 0) {
+                    $('.acctNum').addClass('invalid-msg').text("Account number is required");
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+                }
+                else if (!validNumber.test(account)) {
+                    $('.acctNum').addClass('invalid-msg').text("should be 12 digits");
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+                }
+                else {
+                    $('.acctNum').empty();
+                    $(this).addClass('valid-input').removeClass('invalid-input');
+                }
+            });
             $("input[name=PayeeId]").val(sessionStorage.getItem("payee_id"))
-           $("input[name=CustomerId]").val(sessionStorage.getItem("customer_id"))
+            $("input[name=CustomerId]").val(sessionStorage.getItem("customer_id"))
             $("#update").click(() => {
-                // let payeeId = $("input[name=payeeId]").val()
                 // alert("hellooo")
                 let payeeId = $("input[name=PayeeId]").val()
                 let payeeName = $("input[name=PayeeName]").val()
                 let payeeAccountNumber = $("input[name=PayeeAccountNumber]").val()
                 let customerId = $("input[name=CustomerId]").val()
-                // alert(payeeId+" "+payeeName+" "+payeeAccountNumber+" "+customerId)
-                $.post("http://localhost:8082/payee/update", {
-                    payeeId:payeeId,
-                    payeeName:payeeName,
-                    payeeAccountNumber:payeeAccountNumber,
-                    customerId:customerId
-                }, function (data) {
-                    alert(data)
-                    window.location.href="http://localhost:8082/web/UI";
-                })
+                try{
+                    if(payeeName==="" || payeeAccountNumber===""){
+                        throw "both fields are mandatory";
+                    }
+                    else {
+                        $.post("http://localhost:8082/payee/update", {
+                            payeeId:payeeId,
+                            payeeName:payeeName,
+                            payeeAccountNumber:payeeAccountNumber,
+                            customerId:customerId
+                        }, function (data) {
+                            alert(data)
+                            window.location.href="http://localhost:8082/web/UI";
+                        })
+                    }
+                }
+                catch(errmsg){
+                    $("#responseMessage").append("<div class='row justify-content-center text-danger ' id='error'><p class='text-center'>"+errmsg+"</p></div>")
+                }
 
             })
         })
@@ -120,19 +158,24 @@
         </div>
         <div class="grp">
             <label class="required">PAYEE NAME</label>
-            <input type ="text" name="PayeeName" placeholder="NAME AS PER AADHAR" required>
+            <input type ="text" id="name" name="PayeeName" placeholder="NAME AS PER AADHAR" required="required">
+            <div>
+                <p class="payeeName text-danger"></p>
+
+            </div>
 
         </div>
         <div class="grp">
             <label class="required">PAYEE ACCOUNT NUMBER </label>
-            <input type ="text" name="PayeeAccountNumber" placeholder="ACCOUNT NUMBER" required>
-
+            <input type ="text" id="actNum" name="PayeeAccountNumber" placeholder="ACCOUNT NUMBER" required="required">
+            <p class="acctNum text-danger"></p>
         </div>
 
         <div class="grp">
             <label class="required">CUSTOMER ID</label>
             <input type ="text" name="CustomerId" placeholder="CUSTOMER ID" required disabled>
         </div>
+        <div id="responseMessage"></div>
 <!--        button-->
         <div class="d-flex mt-4 row justify-content-around">
             <button type="button" id="update" class=" btn col-3 btn-success">UPDATE</button>

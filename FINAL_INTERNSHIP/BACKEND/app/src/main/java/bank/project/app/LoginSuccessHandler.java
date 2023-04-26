@@ -23,14 +23,8 @@ public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         Customer customer = (Customer) authentication.getPrincipal();
         ResourceBundle bundle = ResourceBundle.getBundle("property");
-        if (customer.getCustomer_status().equalsIgnoreCase("Inactive")) {
-            logger.info(bundle.getString("db_unsuccessfull"));
-            logger.info("success");
-            super.setDefaultTargetUrl("/logout");
-        } else {
-            service.setAttempts(customer.getCustomer_id());
-            super.setDefaultTargetUrl("/web/UI");
-        }
+        service.setAttempts(customer.getCustomer_id());
+        super.setDefaultTargetUrl("/web/UI");
         super.onAuthenticationSuccess(request, response, authentication);
     }
 }

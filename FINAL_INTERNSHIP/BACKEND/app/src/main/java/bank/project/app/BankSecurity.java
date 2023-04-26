@@ -37,14 +37,12 @@ public class BankSecurity {
          requests.antMatchers("/web/UI").authenticated();
          requests.antMatchers("/web/log").permitAll();
          requests.antMatchers("/web/updatePayee").authenticated();
-//        requests.anyRequest().permitAll();
-        // requests.anyRequest().permitAll();
+
          });
 
         httpSecurity.formLogin().loginPage("/web/log").usernameParameter("username").failureHandler(loginFailureHandler).successHandler(loginSuccessHandler).permitAll();
         httpSecurity.logout().permitAll();
         httpSecurity.csrf().disable();
-//        httpSecurity.authorizeRequests().anyRequest().permitAll();
 
         AuthenticationManagerBuilder builder = httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);
         builder.userDetailsService(bankService);

@@ -34,8 +34,6 @@ public class PayeeEndpoints {
     @ResponsePayload
     public ListPayeeResponse listPayeeResponse(@RequestPayload ListPayeeRequest listPayeeRequest){
         ListPayeeResponse response=new ListPayeeResponse();
-        ServiceStatus serviceStatus=new ServiceStatus();
-
         List<bank.project.dao.Payee> jpaComponent = bankService.listPayee(listPayeeRequest.getUsername());// pojo objects
         List<service.bank.soap.Payee> payeeList=new ArrayList<>();// xml list of objects as of its empty
 
@@ -44,14 +42,11 @@ public class PayeeEndpoints {
             Payee payee = new Payee();// XSD POJO
             BeanUtils.copyProperties(it.next(),payee);
             payeeList.add(payee);
-
         }
-//        response.setServiceStatus(serviceStatus);
         response.getPayee().addAll(payeeList);
         logger.info(response.toString());
         return response;
 
     }
-
 
 }

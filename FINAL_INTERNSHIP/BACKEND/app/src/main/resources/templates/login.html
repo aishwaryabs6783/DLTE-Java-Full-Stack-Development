@@ -18,6 +18,44 @@
         }
 
     </style>
+    <script>
+        $(document).ready(()=> {
+            $('#username').on('input', function () {
+                console.log("valid username");
+                var username = $(this).val();
+                var validUserName = /^[a-z]{3,}$/;
+                if (username.length === 0) {
+                    $('.user').addClass('invalid-msg').text("username is required!!");
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else if (!validUserName.test(username)) {
+                    $('.user').addClass('invalid-msg').text('username must be alphabets,must be minimum 3 characters!!');
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else {
+                    $('.user').empty();
+                    $(this).addClass('valid-input').removeClass('invalid-input');
+                }
+            });
+            $('#password').on('input', function () {
+                console.log("Entered the valid password");
+                var password = $(this).val();
+                var validPassword = /^[0-9]{1,}$/;
+                if (password.length === 0) {
+                    $('.password').addClass('invalid-msg').text("password is required!!");
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else if (!validPassword.test(password)) {
+                    $('.password').addClass('invalid-msg').text('password must contain numeric value!!');
+                    $(this).addClass('invalid-input').removeClass('valid-input');
+
+                } else {
+                    $('.password').empty();
+                    $(this).addClass('valid-input').removeClass('invalid-input');
+                }
+            });
+        })
+    </script>
 
 </head>
 <body>
@@ -38,10 +76,12 @@
                     <div class="form group">
                         <label class="required">Customer Username</label>
                         <input type="text" id="username"placeholder="Name" name="username" class="form-control" required/>
+                        <p class="user text-danger"></p>
                     </div>
                     <div class="form group">
                         <label class="required">Customer Password</label>
                         <input type="password" id="password" placeholder="Password" name="password" class="form-control" required/>
+                        <p class="password text-danger"></p>
                     </div>
                     <div th:if="${param.error}">
                         <p class="text-dark">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
